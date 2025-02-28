@@ -1,3 +1,5 @@
+"use client";
+
 import { Button, Text, Heading } from "../components";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -31,15 +33,19 @@ export default function Home() {
       <div className="container-xs mt-[252px] flex flex-col items-center px-14 md:px-5">
         <div className="flex w-[74%] flex-col items-center gap-[62px] md:w-full sm:gap-[31px]">
           <div className="mx-9 flex flex-col items-center gap-[22px] self-stretch md:mx-0">
-            <Heading as="h2" className="text-[40px] font-semibold md:text-[38px] sm:text-[36px]">
+            <Heading
+              as="h2"
+              className="text-[40px] font-semibold md:text-[38px] sm:text-[36px]"
+            >
               Our Ministers
             </Heading>
             <Text
               as="p"
               className="self-stretch text-center !font-poppins text-[16px] font-light leading-[120%] !text-charcoal"
             >
-              Join us as we celebrate the beginning of forever. With love in their hearts and joy to share, Nina and
-              Chris invite you to witness their journey as they say “I do.”
+              Join us as we celebrate the beginning of forever. With love in
+              their hearts and joy to share, Nina and Chris invite you to
+              witness their journey as they say “I do.”
             </Text>
           </div>
           <div className="flex gap-8 self-stretch md:flex-col">

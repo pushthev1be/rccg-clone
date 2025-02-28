@@ -6,13 +6,13 @@ export default function HomeWelcomeSection() {
     <>
       {/* home welcome section */}
       <div className="flex justify-center">
-        <div className="container-xs flex items-start justify-center gap-9 md:flex-col md:px-5">
-          <div className="mb-[186px] flex flex-1 flex-col items-start gap-14 md:self-stretch sm:gap-7">
-            <div className="flex flex-col items-start gap-5 self-stretch">
+        <div className="w-full px-24 flex items-start justify-center gap-9 md:flex-col md:px-5">
+          <div className="mb-[186px] flex flex-1 flex-col items-start gap-14 md:self-stretch sm:gap-7 ">
+            <div className="flex flex-col items-start gap-5 self-stretch ">
               <Heading
                 size="headingxl"
                 as="h1"
-                className="text-[96px] font-semibold leading-[100%] !text-white_color md:text-[48px]"
+                className="lg:text-[80px] font-semibold leading-[100%] !text-white_color md:text-[48px] sm:text-[32px]"
               >
                 <>
                   Welcome to the

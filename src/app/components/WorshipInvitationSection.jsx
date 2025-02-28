@@ -7,11 +7,11 @@ export default function WorshipInvitationSection() {
       {/* worship invitation section */}
       <div className="mt-[274px] flex justify-center self-stretch">
         <div className="container-xs flex items-center justify-center md:flex-col md:px-5">
-          <div className="flex w-[42%] flex-col items-start gap-[30px] pl-[76px] pr-14 md:w-full md:px-5">
+          <div className="flex w-[42%] flex-col items-start gap-[30px] pl-[76px] pr-14 md:w-full md:px-5 ">
             <Text
               size="text2xl"
               as="p"
-              className="ml-9 text-center text-[40px] font-normal leading-[100%] !text-charcoal md:ml-0 md:text-[38px] sm:text-[36px]"
+              className="mx-auto text-center text-[40px] font-normal leading-[100%] !text-charcoal md:ml-0 md:text-[38px] sm:text-[36px]"
             >
               <>
                 Come worship
@@ -26,6 +26,7 @@ export default function WorshipInvitationSection() {
                 We promise you’ll be filled with the holy spirit.
               </>
             </Text>
+            <div className="flex gap-3 mb-4 flex-col items-center sm:w-full">
             <Button
               size="xs"
               shape="round"
@@ -40,6 +41,7 @@ export default function WorshipInvitationSection() {
             >
               Next Gen Live
             </Button>
+            </div>
           </div>
           <div className="flex h-[630px] flex-1 items-start justify-center rounded-[20px] bg-[url(/images/img_verse.png)] bg-cover bg-no-repeat px-14 py-[194px] md:h-auto md:self-stretch md:p-5">
             <div className="mb-3 flex w-[66%] justify-center rounded-[20px] border border-solid border-gray-400 bg-gray-100 px-[38px] py-[66px] md:w-full md:py-5 sm:p-5">

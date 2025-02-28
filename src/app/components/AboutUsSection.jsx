@@ -11,12 +11,11 @@ export default function AboutUsSection() {
             <Text size="textlg" as="p" className="!font-poppins text-[24px] font-medium md:text-[22px]">
               About Us
             </Text>
-            <Text
-              as="p"
-              className="mb-[18px] self-stretch text-center !font-poppins text-[16px] font-normal leading-[100%] !text-gray-700_01"
+            <div
+              className="mb-[18px] self-stretch text-center font-poppins text-[16px] font-normal leading-[100%]"
             >
-              <span className="text-gray-600_02">
-                <>
+              <span className="text-slate-600">
+                {/* <> */}
                   RCCG ROG is a Bible-based, evangelistic, Spirit-empowered church.
                   <br />
                   At RCCG ROG, we’re all about people, because God is all about people.
@@ -28,7 +27,7 @@ export default function AboutUsSection() {
                   <br />
                   relationship with the Lord.
                   <br />
-                </>
+                {/* </> */}
               </span>
               <span className="text-white_color">
                 <>
@@ -38,7 +37,7 @@ export default function AboutUsSection() {
                   here to help you get connected.
                 </>
               </span>
-            </Text>
+            </div>
           </div>
         </div>
       </div>

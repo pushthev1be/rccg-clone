@@ -32,7 +32,7 @@ export default function Footer({ ...props }) {
             </div>
             <div className="flex flex-1 items-center gap-1 sm:self-stretch">
               <Text as="p" className="text-[16px] font-normal">
-                X (TWITTER)
+                X(TWITTER)
               </Text>
               <Img
                 src="img_arrow_arrow_up_right_sm.svg"
