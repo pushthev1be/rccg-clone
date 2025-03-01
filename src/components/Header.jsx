@@ -22,13 +22,13 @@ export default function Header({ ...props }) {
       className={`${props.className} flex justify-center items-center py-[22px] sm:py-5 relative`}
     >
       <div className="container-xs flex items-center justify-between gap-5 md:px-5">
-        <div className="flex items-center justify-start w-fit space-x-3">
+        <div className="flex items-center justify-start space-x-3">
           <Img
             src="logo.svg"
             width={48}
             height={48}
             alt="Headerlogo"
-            className="h-[48px] object-contain"
+            className="h-[48px] sm:h-[32px] object-contain"
           />
           <Img
             src={
@@ -39,7 +39,7 @@ export default function Header({ ...props }) {
             width={220}
             height={48}
             alt="Headerlogo"
-            className="object-contain"
+            className="object-contain h-[48px] sm:h-[32px] sm:w-[100px]"
           />
         </div>
 
@@ -49,35 +49,34 @@ export default function Header({ ...props }) {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <span
-            className={`w-8 h-0.5 bg-blue-900 transition-all duration-300 ${
+            className={`w-7 h-0.5 bg-blue-900 transition-all duration-300 ${
               isMenuOpen ? "rotate-45 translate-y-2" : ""
             }`}
           />
           <span
-            className={`w-8 h-0.5 bg-blue-900 transition-all duration-300 ${
+            className={`w-7 h-0.5 bg-blue-900 transition-all duration-300 ${
               isMenuOpen ? "opacity-0" : ""
             }`}
           />
           <span
-            className={`w-8 h-0.5 bg-blue-900 transition-all duration-300 ${
+            className={`w-7 h-0.5 bg-blue-900 transition-all duration-300 ${
               isMenuOpen ? "-rotate-45 -translate-y-2" : ""
             }`}
           />
         </button>
 
         {/* Desktop Navigation */}
-        <ul className="flex flex-wrap gap-12 md:hidden">
+        <ul className="flex gap-12 md:hidden">
           {links.map((link) => (
             <li key={link.href}>
               <Link href={link.href}>
-                <p
-               
+                <span
                   className={`text-[20px] font-normal ${
                     pathname === link.href ? "text-blue-900" : "text-black"
                   } hover:text-blue-900`}
                 >
                   {link.label}
-                </p>
+                </span>
               </Link>
             </li>
           ))}
@@ -94,15 +93,14 @@ export default function Header({ ...props }) {
               {links.map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} onClick={() => setIsMenuOpen(false)}>
-                    <Text
-                      size="textmd"
-                      as="p"
+                    <p
+
                       className={`text-[24px] font-normal ${
                         pathname === link.href ? "text-blue-900" : "text-black"
                       } hover:text-blue-900`}
                     >
                       {link.label}
-                    </Text>
+                    </p>
                   </Link>
                 </li>
               ))}

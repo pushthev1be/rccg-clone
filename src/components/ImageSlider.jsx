@@ -84,7 +84,7 @@ export default function ImageSlider({ images, title }) {
           {duplicatedImages.map((image, index) => (
             <div
               key={index}
-              className="flex-none w-full md:w-1/3 lg:w-1/4 px-2"
+              className="flex-none w-full sm:w-full md:w-1/3 lg:w-1/4 px-2"
             >
               <Img
                 src={image.src}

@@ -14,7 +14,7 @@ export default function AboutUsSection() {
             <div
               className="mb-[18px] self-stretch text-center font-poppins text-[16px] font-normal leading-[100%]"
             >
-              <span className="text-slate-600">
+              <span className="text-gray-400">
                 {/* <> */}
                   RCCG ROG is a Bible-based, evangelistic, Spirit-empowered church.
                   <br />
