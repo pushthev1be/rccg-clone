@@ -70,15 +70,14 @@ export default function Header({ ...props }) {
           {links.map((link) => (
             <li key={link.href}>
               <Link href={link.href}>
-                <Text
-                  size="textmd"
-                  as="p"
+                <p
+               
                   className={`text-[20px] font-normal ${
-                    pathname === link.href ? "!text-blue-900" : "text-black"
+                    pathname === link.href ? "text-blue-900" : "text-black"
                   } hover:text-blue-900`}
                 >
                   {link.label}
-                </Text>
+                </p>
               </Link>
             </li>
           ))}
@@ -99,7 +98,7 @@ export default function Header({ ...props }) {
                       size="textmd"
                       as="p"
                       className={`text-[24px] font-normal ${
-                        pathname === link.href ? "!text-blue-900" : "text-black"
+                        pathname === link.href ? "text-blue-900" : "text-black"
                       } hover:text-blue-900`}
                     >
                       {link.label}

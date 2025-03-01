@@ -7,7 +7,7 @@ export default function WorshipInvitationSection() {
       {/* worship invitation section */}
       <div className="mt-[274px] flex justify-center self-stretch">
         <div className="container-xs flex items-center justify-center md:flex-col md:px-5">
-          <div className="flex w-[42%] flex-col items-start gap-[30px] pl-[76px] pr-14 md:w-full md:px-5 ">
+          <div className="flex w-[42%] flex-col items-center gap-[30px] pl-[76px] pr-14 md:w-full md:px-5 ">
             <Text
               size="text2xl"
               as="p"
@@ -26,18 +26,18 @@ export default function WorshipInvitationSection() {
                 We promise you’ll be filled with the holy spirit.
               </>
             </Text>
-            <div className="flex gap-3 mb-4 flex-col items-center sm:w-full">
+            <div className="flex gap-3 mb-4 flex-col items-center justify-center sm:w-full ">
             <Button
               size="xs"
               shape="round"
-              className="ml-[74px] min-w-[196px] rounded-[12px] border border-solid border-gray-400 px-[33px] md:ml-0 sm:px-5"
+              className=" min-w-[196px] rounded-[12px] border border-solid border-gray-400 px-[33px] md:ml-0 sm:px-5"
             >
               RCCG Live
             </Button>
             <Button
               size="xs"
               shape="round"
-              className="ml-[74px] min-w-[196px] rounded-[12px] border border-solid border-gray-400 px-[29px] md:ml-0 sm:px-5"
+              className=" min-w-[196px] rounded-[12px] border border-solid border-gray-400 px-[29px] md:ml-0 sm:px-5"
             >
               Next Gen Live
             </Button>

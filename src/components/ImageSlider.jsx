@@ -1,20 +1,51 @@
 import React, { useRef, useState } from "react";
 import { Img } from ".";
 
-export default function ImageSlider({ images,title }) {
+export default function ImageSlider({ images, title }) {
   const sliderRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const itemsToShow = {
+    lg: 4,
+    md: 3,
+    sm: 1,
+  };
+
+  // Create a new array with duplicated images for infinite scrolling
+  const duplicatedImages = [
+    ...images.slice(-4), // Duplicate last 4 images for seamless transition
+    ...images,
+    ...images.slice(0, 4), // Duplicate first 4 images for seamless transition
+  ];
+
+  const getCurrentItems = () => {
+    const totalItems = duplicatedImages.length;
+    const itemsPerView =
+      window.innerWidth >= 1024
+        ? itemsToShow.lg
+        : window.innerWidth >= 768
+        ? itemsToShow.md
+        : itemsToShow.sm;
+    return totalItems > itemsPerView ? itemsPerView : totalItems;
+  };
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 4 : prevIndex - 4
-    );
+    const itemsPerView = getCurrentItems();
+    setCurrentIndex((prevIndex) => {
+      if (prevIndex === 0) {
+        return duplicatedImages.length - itemsPerView; // Jump to the end
+      }
+      return prevIndex - itemsPerView;
+    });
   };
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex + 4 >= images.length ? 0 : prevIndex + 4
-    );
+    const itemsPerView = getCurrentItems();
+    setCurrentIndex((prevIndex) => {
+      if (prevIndex + itemsPerView >= duplicatedImages.length) {
+        return 0; // Jump to the start
+      }
+      return prevIndex + itemsPerView;
+    });
   };
 
   return (
@@ -44,10 +75,17 @@ export default function ImageSlider({ images,title }) {
         <div
           ref={sliderRef}
           className="flex transition-transform duration-500"
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+          style={{
+            transform: `translateX(-${
+              currentIndex * (100 / getCurrentItems())
+            }%)`,
+          }}
         >
-          {images.map((image, index) => (
-            <div key={index} className="flex-none w-1/4 px-2">
+          {duplicatedImages.map((image, index) => (
+            <div
+              key={index}
+              className="flex-none w-full md:w-1/3 lg:w-1/4 px-2"
+            >
               <Img
                 src={image.src}
                 width={350}

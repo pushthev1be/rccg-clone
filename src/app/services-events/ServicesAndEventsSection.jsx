@@ -38,7 +38,7 @@ export default function ServicesAndEventsSection() {
               Weekly
             </Heading>
           </div>
-          <div className="mx-auto flex w-full gap-6 overflow-x-scroll md:mx-0 md:flex-col">
+          <div className="mx-auto flex w-full gap-6 overflow-x-hidden md:mx-0 md:flex-col">
             <Slider
               autoPlay
               autoPlayInterval={2000}
@@ -105,6 +105,7 @@ export default function ServicesAndEventsSection() {
               ))}
             />
           </div>
+        </div>
           <div className="container-xs md:px-5">
             <div className="flex items-center">
               <Img src="img_status.svg" width={46} height={30} alt="Status" className="h-[30px] w-[4%] rounded-[50%]" />
@@ -130,7 +131,6 @@ export default function ServicesAndEventsSection() {
               </div>
             </div>
           </div>
-        </div>
       </div>
     </>
   );

@@ -5,9 +5,15 @@ import metadata from "libphonenumber-js/metadata.full.json";
 import React from "react";
 
 const dropDownOptions = [
-  { label: "Option1", value: "option1" },
-  { label: "Option2", value: "option2" },
-  { label: "Option3", value: "option3" },
+  { label: "CANADA", value: "CANADA" },
+  { label: "UNITED STATES", value: "UNITED STATES" },
+  { label: "UNITED KINGDOM", value: "UNITED KINGDOM" },
+  { label: "NIGERIA", value: "NIGERIA" },
+  { label: "AUSTRALIA", value: "AUSTRALIA" },
+  { label: "NEW ZEALAND", value: "NEW ZEALAND" },
+  { label: "SOUTH AFRICA", value: "SOUTH AFRICA" },
+  { label: "GHANA", value: "GHANA" },
+
 ];
 
 export default function GetInvolvedSection3() {
@@ -26,7 +32,7 @@ export default function GetInvolvedSection3() {
         label: (
           <>
             <Text as="p" className="text-[16px] font-normal !text-gray-800">
-              {"display.callingCode"}
+              {display.callingCode}
             </Text>
           </>
         ),
@@ -53,8 +59,8 @@ export default function GetInvolvedSection3() {
                     className="w-[58%] rounded-lg border border-solid border-blue_gray-100_01 px-4"
                   />
                 </div>
-                <div className="flex gap-10 sm:flex-col">
-                  <div className="flex w-[28%] flex-col items-start gap-2 sm:w-full">
+                <div className="flex w-[58%] gap-10 sm:flex-col">
+                  <div className="flex basis-1/2 flex-col items-start gap-2 sm:w-full">
                     <Text as="p" className="text-[16px] font-normal">
                       Country
                     </Text>
@@ -75,11 +81,11 @@ export default function GetInvolvedSection3() {
                       className="gap-4 self-stretch rounded-lg border border-solid border-blue_gray-100_01 px-2"
                     />
                   </div>
-                  <div className="flex flex-1 flex-col items-start gap-2 sm:self-stretch">
+                  <div className="flex basis-1/2 flex-col items-start gap-2 sm:w-full">
                     <Text as="p" className="text-[16px] font-normal">
                       Phone
                     </Text>
-                    <div className="flex h-[56px] w-[40%] items-center justify-center rounded-lg border border-solid border-blue_gray-100_01 bg-white_color px-1">
+                    <div className="flex h-[56px] items-center justify-center rounded-lg border border-solid border-blue_gray-100_01 bg-white_color px-1">
                       <SelectBox
                         options={countryOptions}
                         defaultValue={countryOptions.find((option) => option.value === "US")}
@@ -88,7 +94,7 @@ export default function GetInvolvedSection3() {
                       <input
                         name="edittext"
                         type="tel"
-                        className="ml-1.5 flex h-[20px] flex-grow items-center justify-center px-3"
+                        className="ml-1.5 flex h-[20px] flex-grow items-center justify-center border-none px-3 outline-none"
                       />
                     </div>
                   </div>

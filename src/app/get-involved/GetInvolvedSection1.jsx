@@ -31,13 +31,13 @@ export default function GetInvolvedSection1() {
               </Text>
             </div>
           </div>
-          <div className="flex w-[42%] flex-col items-end gap-[30px] pl-14 pr-16 md:w-full md:px-5">
+          <div className="flex w-[42%] flex-col items-center gap-[30px] pl-14 pr-16 md:w-full md:px-5">
             <Text
               size="text2xl"
               as="p"
-              className="mr-11 self-stretch text-center text-[40px] font-normal leading-[100%] !text-charcoal md:mr-0 md:text-[38px] sm:text-[36px]"
+              className="self-stretch text-center text-[40px] font-normal leading-[100%] !text-charcoal md:mr-0 md:text-[38px] sm:text-[36px]"
             >
-              Help the church grow
+              Help the <br /> church grow
             </Text>
             <Text as="p" className="text-center text-[16px] font-normal leading-[19px] !text-gray-600_01">
               <>
@@ -48,7 +48,7 @@ export default function GetInvolvedSection1() {
             <Button
               size="xs"
               shape="round"
-              className="mr-[82px] min-w-[196px] rounded-[12px] border border-solid border-gray-400 px-[33px] md:mr-0 sm:px-5"
+              className=" min-w-[196px] rounded-[12px] border border-solid border-gray-400 px-[33px] md:mr-0 sm:px-5"
             >
               Give today
             </Button>
