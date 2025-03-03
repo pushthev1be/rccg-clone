@@ -9,7 +9,7 @@ export default function WeddingInvitationSection() {
         <div className="container-xs flex justify-center px-14 md:px-5">
           <Text
             as="p"
-            className="w-[66%] text-center !font-poppins text-[16px] font-light leading-[120%] !text-charcoal"
+            className="w-[66%] sm:w-[90%] text-center !font-poppins text-[16px] font-light leading-[120%] !text-charcoal"
           >
             Join us as we celebrate the beginning of forever. With love in their hearts and joy to share, Nina and Chris
             invite you to witness their journey as they say “I do.” Let’s make memories to cherish together on this

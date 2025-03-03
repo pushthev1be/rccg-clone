@@ -21,8 +21,8 @@ export default function Header({ ...props }) {
       {...props}
       className={`${props.className} flex justify-center items-center py-[22px] sm:py-5 relative`}
     >
-      <div className="container-xs flex items-center justify-between gap-5 md:px-5">
-        <div className="flex items-center justify-start space-x-3">
+      <div className=" w-full flex items-center justify-between gap-5 lg:px-24 md:px-24 sm:px-5">
+        <div className="flex items-center justify-start space-x-2">
           <Img
             src="logo.svg"
             width={48}
@@ -49,17 +49,17 @@ export default function Header({ ...props }) {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <span
-            className={`w-7 h-0.5 bg-blue-900 transition-all duration-300 ${
+            className={`w-7 h-0.5 bg-black transition-all duration-300 ${
               isMenuOpen ? "rotate-45 translate-y-2" : ""
             }`}
           />
           <span
-            className={`w-7 h-0.5 bg-blue-900 transition-all duration-300 ${
+            className={`w-7 h-0.5 bg-black transition-all duration-300 ${
               isMenuOpen ? "opacity-0" : ""
             }`}
           />
           <span
-            className={`w-7 h-0.5 bg-blue-900 transition-all duration-300 ${
+            className={`w-7 h-0.5 bg-black transition-all duration-300 ${
               isMenuOpen ? "-rotate-45 -translate-y-2" : ""
             }`}
           />

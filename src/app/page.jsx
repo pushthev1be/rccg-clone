@@ -30,7 +30,7 @@ export default function Home() {
 
       {/* about us section */}
       <AboutUsSection />
-      <div className="container-xs mt-[252px] flex flex-col items-center px-14 md:px-5">
+      <div className="container-xs mt-[252px] sm:mt-[152px] flex flex-col items-center px-14 md:px-5">
         <div className="flex w-[74%] flex-col items-center gap-[62px] md:w-full sm:gap-[31px]">
           <div className="mx-9 flex flex-col items-center gap-[22px] self-stretch md:mx-0">
             <Heading

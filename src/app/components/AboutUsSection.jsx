@@ -12,7 +12,7 @@ export default function AboutUsSection() {
               About Us
             </Text>
             <div
-              className="mb-[18px] self-stretch text-center font-poppins text-[16px] font-normal leading-[100%]"
+              className="mb-[18px] self-stretch text-center font-poppins text-[16px] sm:text-[13px] font-normal leading-[100%]"
             >
               <span className="text-gray-400">
                 {/* <> */}

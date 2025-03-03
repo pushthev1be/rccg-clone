@@ -11,7 +11,7 @@ export default function UpcomingEventsSection() {
     <>
       {/* upcoming events section */}
       <div className="mt-[372px] flex flex-col gap-[72px] self-stretch md:gap-[54px] sm:gap-9">
-        <div className="container-xs md:px-5">
+        <div className="container-xs lg:px-5 md:px-5">
           <div className="flex items-start justify-center sm:flex-col">
             <Heading as="h2" className="text-[40px] font-semibold md:text-[38px] sm:text-[36px]">
               Upcoming events
@@ -38,7 +38,7 @@ export default function UpcomingEventsSection() {
             </div>
           </div>
         </div>
-        <div className="mx-auto flex w-full overflow-x-scroll">
+        <div className="mx-auto flex w-full overflow-x-scroll ">
           <Slider
             autoPlay
             autoPlayInterval={2000}

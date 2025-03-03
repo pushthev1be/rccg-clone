@@ -7,25 +7,23 @@ export default function WorshipInvitationSection() {
       {/* worship invitation section */}
       <div className="mt-[274px] flex justify-center self-stretch">
         <div className="container-xs flex items-center justify-center md:flex-col md:px-5">
-          <div className="flex w-[42%] flex-col items-center gap-[30px] pl-[76px] pr-14 md:w-full md:px-5 ">
-            <Text
-              size="text2xl"
-              as="p"
-              className="mx-auto text-center text-[40px] font-normal leading-[100%] !text-charcoal md:ml-0 md:text-[38px] sm:text-[36px]"
+          <div className="flex w-[42%] flex-col items-center gap-[30px] md:w-full md:px-5 ">
+            <p
+              className="mx-auto text-center text-[40px] w-full font-normal leading-[100%] !text-charcoal md:ml-0 md:text-[38px] sm:text-[36px]"
             >
               <>
                 Come worship
                 <br />
                 with us
               </>
-            </Text>
-            <Text as="p" className="text-center text-[16px] font-normal leading-[19px] !text-gray-600_01">
+            </p>
+            <p className="text-center text-[16px] sm:text-[13px] font-normal leading-[19px] !text-gray-600_01">
               <>
                 Come worship with us every Sunday.
                 <br />
                 We promise you’ll be filled with the holy spirit.
               </>
-            </Text>
+            </p>
             <div className="flex gap-3 mb-4 flex-col items-center justify-center sm:w-full ">
             <Button
               size="xs"
