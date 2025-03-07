@@ -11,8 +11,8 @@ export default function ServicesEventsSection1() {
     <>
       {/* services events section */}
       <div className="mt-[196px] flex flex-col items-center gap-[74px] md:gap-[55px] sm:gap-[37px]">
-        <div className="container-xs flex flex-col items-center px-14 md:px-5">
-          <div className="flex w-[66%] flex-col items-center gap-8 md:w-full">
+        <div className="container-xs flex flex-col items-start px-14 md:px-5">
+          <div className="flex w-[66%] flex-col items-start gap-8 md:w-full">
             <Heading
               size="headings"
               as="h2"
@@ -31,7 +31,7 @@ export default function ServicesEventsSection1() {
               551: { items: 1 },
               1051: { items: 2 },
             }}
-            paddingLeft={392}
+            paddingLeft={100}
             paddingRight={113}
             disableDotsControls
             activeIndex={sliderState}
@@ -62,7 +62,7 @@ export default function ServicesEventsSection1() {
                         <>
                           Come worship with us every Sunday.
                           <br />
-                          We promise you’ll be filled with the holy spirit.
+                          We promise you'll be filled with the holy spirit.
                         </>
                       </Text>
                     </div>
