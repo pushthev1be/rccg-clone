@@ -12,24 +12,32 @@ export default function ServicesEventsSection1() {
       {/* services events section */}
       <div className="mt-[196px] flex flex-col items-center gap-[74px] md:gap-[55px] sm:gap-[37px]">
         <div className="container-xs flex flex-col items-center px-14 md:px-5">
-        <div className="flex w-[66%] flex-col items-center gap-8 md:w-full">
-          <Heading size="headings" as="h2" className="text-[32px] font-semibold md:text-[30px] sm:text-[28px]">
-            Monthly
-          </Heading>
+          <div className="flex w-[66%] flex-col items-center gap-8 md:w-full">
+            <Heading
+              size="headings"
+              as="h2"
+              className="text-[32px] font-semibold md:text-[30px] sm:text-[28px]"
+            >
+              Monthly
+            </Heading>
           </div>
         </div>
         <div className="mx-3 flex w-full gap-6 overflow-x-hidden md:mx-0 flex-col">
-        <Slider
-              autoPlay
-              autoPlayInterval={2000}
-              responsive={{ 0: { items: 1 }, 551: { items: 1 }, 1051: { items: 2 } }}
-              paddingLeft={392}
-              paddingRight={113}
-              disableDotsControls
-              activeIndex={sliderState}
-              onSlideChanged={(e) => {
-                setSliderState(e?.item);
-              }}
+          <Slider
+            autoPlay
+            autoPlayInterval={2000}
+            responsive={{
+              0: { items: 1 },
+              551: { items: 1 },
+              1051: { items: 2 },
+            }}
+            paddingLeft={392}
+            paddingRight={113}
+            disableDotsControls
+            activeIndex={sliderState}
+            onSlideChanged={(e) => {
+              setSliderState(e?.item);
+            }}
             ref={sliderRef}
             items={[...Array(18)].map(() => (
               <React.Fragment key={Math.random()}>
@@ -47,7 +55,10 @@ export default function ServicesEventsSection1() {
                           Service
                         </>
                       </Text>
-                      <Text as="p" className="text-[16px] font-normal leading-[19px] !text-gray-600_01">
+                      <Text
+                        as="p"
+                        className="text-[16px] font-normal leading-[19px] !text-gray-600_01"
+                      >
                         <>
                           Come worship with us every Sunday.
                           <br />
@@ -64,7 +75,10 @@ export default function ServicesEventsSection1() {
                           alt="Navigation"
                           className="h-[20px]"
                         />
-                        <Text as="p" className="text-[16px] font-normal !text-gray-900_02">
+                        <Text
+                          as="p"
+                          className="text-[16px] font-normal !text-gray-900_02"
+                        >
                           Parish House Indianapolis.
                         </Text>
                       </div>
@@ -76,13 +90,25 @@ export default function ServicesEventsSection1() {
                           alt="Calendar"
                           className="h-[20px]"
                         />
-                        <Text as="p" className="text-[16px] font-normal !text-gray-900_02">
+                        <Text
+                          as="p"
+                          className="text-[16px] font-normal !text-gray-900_02"
+                        >
                           1st Sunday of the Month
                         </Text>
                       </div>
                       <div className="flex items-center gap-3">
-                        <Img src="img_search.svg" width={20} height={20} alt="Search" className="h-[20px]" />
-                        <Text as="p" className="text-[16px] font-normal !text-gray-900_02">
+                        <Img
+                          src="img_search.svg"
+                          width={20}
+                          height={20}
+                          alt="Search"
+                          className="h-[20px]"
+                        />
+                        <Text
+                          as="p"
+                          className="text-[16px] font-normal !text-gray-900_02"
+                        >
                           10:30am – 1:00pm
                         </Text>
                       </div>
@@ -92,9 +118,15 @@ export default function ServicesEventsSection1() {
               </React.Fragment>
             ))}
           />
-           <div className="container-xs md:px-5">
+          <div className="container-xs md:px-5">
             <div className="flex items-center">
-              <Img src="img_status.svg" width={46} height={30} alt="Status" className="h-[30px] w-[4%] rounded-[50%]" />
+              <Img
+                src="img_status.svg"
+                width={46}
+                height={30}
+                alt="Status"
+                className="h-[30px] w-[4%] rounded-[50%]"
+              />
               <div className="flex flex-1 justify-end gap-4 px-8 sm:px-5">
                 <Button
                   shape="circle"
