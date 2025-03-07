@@ -14,7 +14,7 @@ export default function AboutUsSection() {
               className="text-[64px] font-semibold leading-[100%] !text-white_color md:text-[48px]"
             >
               <>
-                There’s a home for
+                There's a home for
                 <br />
                 everyone in christ.
               </>

@@ -123,7 +123,11 @@ export default function GetInvolvedSection3() {
                   />
                 </div>
               </div>
-              <Button color="blue_A400" size="md" className="min-w-[486px] rounded-[16px] px-[34px] sm:px-5">
+              <Button
+                color="blue_A400"
+                size="md"
+                className="min-w-[486px] rounded-[16px] px-[34px] sm:px-5 hover:bg-[#4D88FF] hover:text-white_color hover:border-[#4D88FF] transition-colors"
+              >
                 Contact us
               </Button>
             </div>

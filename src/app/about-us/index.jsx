@@ -65,9 +65,21 @@ export default function AboutUsPage() {
                   witness their journey as they say "I do."
                 </Text>
               </div>
-              <div className="flex gap-8 md:flex-col">
-                <UserProfileImage userImage="img_dsc_5797.png" />
-                <UserProfileImage userImage="img_dsc_9587.png" />
+              <div className="flex gap-8 self-stretch md:flex-col">
+                <div className="relative group overflow-hidden">
+                  <UserProfileImage userImage="img_dsc_5797.png" />
+                  <div className="absolute bottom-0 left-0 w-full h-[30%] bg-[#181818] translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex flex-col items-center justify-center">
+                    <p className="text-[20px] text-white_color font-medium">Pastor J.K Balogun</p>
+                    <p className="text-[13.5px] text-white_color">Head Pastor</p>
+                  </div>
+                </div>
+                <div className="relative group overflow-hidden">
+                  <UserProfileImage userImage="img_dsc_9587.png" />
+                  <div className="absolute bottom-0 left-0 w-full h-[30%] bg-[#181818] translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex flex-col items-center justify-center">
+                    <p className="text-[20px] text-white_color font-medium">Pastor(Mrs) F.O Balogun</p>
+                    <p className="text-[13.5px] text-white_color">Head Pastor</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

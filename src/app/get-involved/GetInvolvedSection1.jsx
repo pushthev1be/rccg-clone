@@ -48,7 +48,7 @@ export default function GetInvolvedSection1() {
             <Button
               size="xs"
               shape="round"
-              className=" min-w-[196px] rounded-[12px] border border-solid border-gray-400 px-[33px] md:mr-0 sm:px-5"
+              className="min-w-[196px] rounded-[12px] border border-solid border-gray-400 px-[33px] md:mr-0 sm:px-5 hover:bg-[#4D88FF] hover:text-white_color hover:border-[#4D88FF] transition-colors"
             >
               Give today
             </Button>

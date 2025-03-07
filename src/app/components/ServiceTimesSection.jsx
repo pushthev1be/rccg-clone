@@ -9,7 +9,7 @@ const eventDetailsList = [
       <>
         Come worship with us every Sunday.
         <br />
-        We promise you’ll be filled with the holy spirit.
+        We promise you'll be filled with the holy spirit.
       </>
     ),
     parishHouseText: "Parish House Indianapolis.",
@@ -22,7 +22,7 @@ const eventDetailsList = [
       <>
         Come worship with us every Sunday.
         <br />
-        We promise you’ll be filled with the holy spirit.
+        We promise you'll be filled with the holy spirit.
       </>
     ),
     parishHouseText: "Parish House Indianapolis.",
@@ -35,7 +35,7 @@ const eventDetailsList = [
       <>
         Come worship with us every Sunday.
         <br />
-        We promise you’ll be filled with the holy spirit.
+        We promise you'll be filled with the holy spirit.
       </>
     ),
     parishHouseText: "Parish House Indianapolis.",
@@ -59,7 +59,7 @@ export default function ServiceTimesSection() {
               className="self-stretch text-center !font-poppins text-[16px] font-light leading-[120%] !text-charcoal"
             >
               Join us as we celebrate the beginning of forever. With love in their hearts and joy to share, Nina and
-              Chris invite you to witness their journey as they say “I do.”
+              Chris invite you to witness their journey as they say "I do."
             </Text>
           </div>
           <div className="flex gap-6 self-stretch md:flex-col">
@@ -72,7 +72,7 @@ export default function ServiceTimesSection() {
           <Button
             size="xs"
             shape="round"
-            className="min-w-[196px] rounded-[12px] border border-solid border-gray-400 px-[33px] sm:px-5"
+            className="min-w-[196px] rounded-[12px] border border-solid border-gray-400 px-[33px] sm:px-5 hover:bg-[#4D88FF] hover:text-white_color hover:border-[#4D88FF] transition-colors"
           >
             See more
           </Button>

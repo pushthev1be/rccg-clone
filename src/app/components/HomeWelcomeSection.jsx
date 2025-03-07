@@ -75,7 +75,7 @@ export default function HomeWelcomeSection() {
               size="xs"
               variant="outline"
               shape="round"
-              className="min-w-[196px] rounded-[12px] !border px-[33px] sm:px-5"
+              className="min-w-[196px] rounded-[12px] !border px-[33px] sm:px-5 hover:bg-[#4D88FF] hover:text-white_color hover:border-[#4D88FF] transition-colors"
             >
               Learn more
             </Button>

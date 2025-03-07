@@ -21,21 +21,21 @@ export default function WorshipInvitationSection() {
               <>
                 Come worship with us every Sunday.
                 <br />
-                We promise you’ll be filled with the holy spirit.
+                We promise you'll be filled with the holy spirit.
               </>
             </p>
             <div className="flex gap-3 mb-4 flex-col items-center justify-center sm:w-full ">
             <Button
               size="xs"
               shape="round"
-              className=" min-w-[196px] rounded-[12px] border border-solid border-gray-400 px-[33px] md:ml-0 sm:px-5"
+              className="min-w-[196px] rounded-[12px] border border-solid border-gray-400 px-[33px] md:ml-0 sm:px-5 hover:bg-[#4D88FF] hover:text-white_color hover:border-[#4D88FF] transition-colors"
             >
               RCCG Live
             </Button>
             <Button
               size="xs"
               shape="round"
-              className=" min-w-[196px] rounded-[12px] border border-solid border-gray-400 px-[29px] md:ml-0 sm:px-5"
+              className="min-w-[196px] rounded-[12px] border border-solid border-gray-400 px-[29px] md:ml-0 sm:px-5 hover:bg-[#4D88FF] hover:text-white_color hover:border-[#4D88FF] transition-colors"
             >
               Next Gen Live
             </Button>

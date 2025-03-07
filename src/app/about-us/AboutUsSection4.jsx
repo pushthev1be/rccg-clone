@@ -124,7 +124,7 @@ export default function AboutUsSection4() {
               className="self-stretch text-center !font-poppins text-[16px] font-light leading-[120%] !text-charcoal"
             >
               Join us as we celebrate the beginning of forever. With love in their hearts and joy to share, Nina and
-              Chris invite you to witness their journey as they say “I do.”
+              Chris invite you to witness their journey as they say "I do."
             </Text>
           </div>
           <div className="flex gap-5 md:flex-col">
@@ -170,20 +170,20 @@ export default function AboutUsSection4() {
                 <>
                   Come worship with us every Sunday.
                   <br />
-                  We promise you’ll be filled with the holy spirit.
+                  We promise you'll be filled with the holy spirit.
                 </>
               </Text>
               <Button
                 size="xs"
                 shape="round"
-                className="ml-[74px] min-w-[196px] rounded-[12px] border border-solid border-gray-400 px-[33px] md:ml-0 sm:px-5"
+                className="ml-[74px] min-w-[196px] rounded-[12px] border border-solid border-gray-400 px-[33px] md:ml-0 sm:px-5 hover:bg-[#4D88FF] hover:text-white_color hover:border-[#4D88FF] transition-colors"
               >
                 RCCG Live
               </Button>
               <Button
                 size="xs"
                 shape="round"
-                className="ml-[74px] min-w-[196px] rounded-[12px] border border-solid border-gray-400 px-[29px] md:ml-0 sm:px-5"
+                className="ml-[74px] min-w-[196px] rounded-[12px] border border-solid border-gray-400 px-[29px] md:ml-0 sm:px-5 hover:bg-[#4D88FF] hover:text-white_color hover:border-[#4D88FF] transition-colors"
               >
                 Next Gen Live
               </Button>

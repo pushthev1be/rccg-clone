@@ -45,19 +45,31 @@ export default function Home() {
             >
               Join us as we celebrate the beginning of forever. With love in
               their hearts and joy to share, Nina and Chris invite you to
-              witness their journey as they say “I do.”
+              witness their journey as they say "I do."
             </Text>
           </div>
           <div className="flex gap-8 self-stretch md:flex-col">
-            <UserProfileImage />
-            <UserProfileImage userImage="img_dsc_9587.png" />
+            <div className="relative group overflow-hidden">
+              <UserProfileImage />
+              <div className="absolute bottom-0 left-0 w-full h-[30%] bg-[#181818] translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex flex-col items-center justify-center">
+                <p className="text-[20px] text-white_color font-medium">Pastor J.K Balogun</p>
+                <p className="text-[13.5px] text-white_color">Head Pastor</p>
+              </div>
+            </div>
+            <div className="relative group overflow-hidden">
+              <UserProfileImage userImage="img_dsc_9587.png" />
+              <div className="absolute bottom-0 left-0 w-full h-[30%] bg-[#181818] translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex flex-col items-center justify-center">
+                <p className="text-[20px] text-white_color font-medium">Pastor(Mrs) F.O Balogun</p>
+                <p className="text-[13.5px] text-white_color">Head Pastor</p>
+              </div>
+            </div>
           </div>
           <Button
             color="gray_400"
             size="xs"
             variant="outline"
             shape="round"
-            className="min-w-[196px] rounded-[12px] !border px-[31px] !text-gray-800 sm:px-5"
+            className="min-w-[196px] rounded-[12px] !border px-[31px] !text-gray-800 sm:px-5 hover:bg-[#4D88FF] hover:text-white_color hover:border-[#4D88FF] transition-colors"
           >
             See more info
           </Button>

@@ -6,7 +6,7 @@ export default function AboutUsSection2() {
     <>
       {/* about us section */}
       <div className="relative mt-[146px] h-[630px] content-center md:h-auto">
-        <div className="container-xs flex justify-start md:px-5 border rounded-lg p-6"
+        <div className="container-xs flex justify-start md:px-5 border rounded-lg p-6 mx-auto"
         style={{backgroundImage: "url('/images/img_verse.png')", backgroundSize: "cover", backgroundPosition: "center"}}>
 
         <div className=" top-0 my-auto flex h-max w-[48%] flex-col items-start justify-center gap-4 rounded-[20px] bg-gray-100 px-[34px] py-[60px] md:py-5 sm:p-5">

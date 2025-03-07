@@ -28,7 +28,7 @@ export default function ServicesAndEventsSection() {
               className="self-stretch text-center !font-poppins text-[16px] font-light leading-[120%] !text-charcoal"
             >
               Join us as we celebrate the beginning of forever. With love in their hearts and joy to share, Nina and
-              Chris invite you to witness their journey as they say “I do.”
+              Chris invite you to witness their journey as they say "I do."
             </Text>
           </div>
         </div>
@@ -63,7 +63,7 @@ export default function ServicesAndEventsSection() {
                           <>
                             Come worship with us every Sunday.
                             <br />
-                            We promise you’ll be filled with the holy spirit.
+                            We promise you'll be filled with the holy spirit.
                           </>
                         </Text>
                       </div>
@@ -115,7 +115,7 @@ export default function ServicesAndEventsSection() {
                   onClick={() => {
                     sliderRef?.current?.slidePrev();
                   }}
-                  className="w-[60px] rounded-[30px] border border-solid border-gray-400 px-[18px]"
+                  className="w-[60px] rounded-[30px] border border-solid border-gray-400 px-[18px] hover:bg-[#4D88FF] hover:text-white_color hover:border-[#4D88FF] transition-colors"
                 >
                   <Img src="img_arrow_left.svg" width={24} height={24} />
                 </Button>
@@ -124,7 +124,7 @@ export default function ServicesAndEventsSection() {
                   onClick={() => {
                     sliderRef?.current?.slideNext();
                   }}
-                  className="w-[60px] rotate-[-180deg] rounded-[30px] border border-solid border-gray-400 px-[18px]"
+                  className="w-[60px] rotate-[-180deg] rounded-[30px] border border-solid border-gray-400 px-[18px] hover:bg-[#4D88FF] hover:text-white_color hover:border-[#4D88FF] transition-colors"
                 >
                   <Img src="img_arrow_left.svg" width={24} height={24} />
                 </Button>

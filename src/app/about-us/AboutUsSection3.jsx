@@ -16,7 +16,7 @@ export default function AboutUsSection3() {
               className="self-stretch text-center !font-poppins text-[16px] font-light leading-[120%] !text-charcoal"
             >
               Join us as we celebrate the beginning of forever. With love in their hearts and joy to share, Nina and
-              Chris invite you to witness their journey as they say “I do.”
+              Chris invite you to witness their journey as they say "I do."
             </Text>
           </div>
         </div>

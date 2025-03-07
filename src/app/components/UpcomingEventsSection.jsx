@@ -22,7 +22,7 @@ export default function UpcomingEventsSection() {
                   sliderRef?.current?.slidePrev();
                 }}
                 shape="circle"
-                className="w-[60px] rounded-[30px] border border-solid border-gray-400 px-[18px]"
+                className="w-[60px] rounded-[30px] border border-solid border-gray-400 px-[18px] hover:bg-[#4D88FF] hover:text-white_color hover:border-[#4D88FF] transition-colors"
               >
                 <Img src="img_arrow_left.svg" width={24} height={24} />
               </Button>
@@ -31,7 +31,7 @@ export default function UpcomingEventsSection() {
                   sliderRef?.current?.slideNext();
                 }}
                 shape="circle"
-                className="w-[60px] rotate-[-180deg] rounded-[30px] border border-solid border-gray-400 px-[18px]"
+                className="w-[60px] rotate-[-180deg] rounded-[30px] border border-solid border-gray-400 px-[18px] hover:bg-[#4D88FF] hover:text-white_color hover:border-[#4D88FF] transition-colors"
               >
                 <Img src="img_arrow_left.svg" width={24} height={24} />
               </Button>
