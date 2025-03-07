@@ -9,31 +9,43 @@ import AboutUsSection2 from "./AboutUsSection2";
 import AboutUsSection3 from "./AboutUsSection3";
 import AboutUsSection4 from "./AboutUsSection4";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ImageSlider from "../../components/ImageSlider";
 
 const images = [
-  { src: "img_dsc_9310.png", alt: "Dsc9310" },
-  { src: "img_dsc_9348.png", alt: "Dsc9348" },
-  { src: "img_dsc_9297.png", alt: "Dsc9297" },
-  { src: "img_dsc_9242.png", alt: "Dsc9242" },
-  { src: "img_dsc_9206.png", alt: "Dsc9206" },
-  { src: "img_dsc_9251.png", alt: "Dsc9251" },
-  { src: "img_dsc_9350.png", alt: "Dsc9350" },
-  { src: "img_dsc_9348.png", alt: "Dsc9348" },
-  { src: "img_dsc_9341.png", alt: "Dsc9341" },
-  { src: "img_dsc_9322.png", alt: "Dsc9322" },
-  { src: "img_dsc_9284.png", alt: "Dsc9284" },
-  { src: "img_dsc_9277.png", alt: "Dsc9277" },
-  { src: "img_dsc_9268.png", alt: "Dsc9268" },
-  { src: "img_dsc_9256.png", alt: "Dsc9256" },
-  { src: "img_dsc_9245.png", alt: "Dsc9245" },
-  { src: "img_dsc_9408.png", alt: "Dsc9408" },
-  { src: "img_dsc_9293.png", alt: "Dsc9293" },
-  { src: "img_dsc_9350_398x350.png", alt: "Dsc9350" },
+  {
+    src: "img_dsc_5797.png",
+    alt: "Pastor J.K Balogun",
+    title: "Pastor J.K Balogun",
+    subtitle: "Head Pastor",
+  },
+  {
+    src: "img_dsc_9587.png",
+    alt: "Pastor(Mrs) F.O Balogun",
+    title: "Pastor(Mrs) F.O Balogun",
+    subtitle: "Head Pastor",
+  },
+  {
+    src: "img_dsc_5797.png",
+    alt: "Pastor J.K Balogun",
+    title: "Pastor J.K Balogun",
+    subtitle: "Head Pastor",
+  },
+  {
+    src: "img_dsc_9587.png",
+    alt: "Pastor(Mrs) F.O Balogun",
+    title: "Pastor(Mrs) F.O Balogun",
+    subtitle: "Head Pastor",
+  },
 ];
 
 export default function AboutUsPage() {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   return (
     <div className="w-full bg-white_color">
       <Header className="bg-white_color" />
@@ -67,39 +79,61 @@ export default function AboutUsPage() {
               </div>
               <div className="flex gap-8 self-stretch md:flex-col">
                 <div className="relative group overflow-hidden rounded-lg w-full">
-                  <UserProfileImage userImage="img_dsc_5797.png" className="w-full" />
+                  <UserProfileImage
+                    userImage="img_dsc_5797.png"
+                    className="w-full"
+                  />
                   <div className="absolute bottom-0 left-0 w-full h-[30%] bg-[#181818] translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex flex-col items-center justify-center">
-                    <p className="text-[20px] text-white_color font-medium">Pastor J.K Balogun</p>
-                    <p className="text-[13.5px] text-white_color">Head Pastor</p>
+                    <p className="text-[20px] text-white_color font-medium">
+                      Pastor J.K Balogun
+                    </p>
+                    <p className="text-[13.5px] text-white_color">
+                      Head Pastor
+                    </p>
                   </div>
                 </div>
                 <div className="relative group overflow-hidden rounded-lg w-full">
-                  <UserProfileImage userImage="img_dsc_9587.png" className="w-full" />
+                  <UserProfileImage
+                    userImage="img_dsc_9587.png"
+                    className="w-full"
+                  />
                   <div className="absolute bottom-0 left-0 w-full h-[30%] bg-[#181818] translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex flex-col items-center justify-center">
-                    <p className="text-[20px] text-white_color font-medium">Pastor(Mrs) F.O Balogun</p>
-                    <p className="text-[13.5px] text-white_color">Head Pastor</p>
+                    <p className="text-[20px] text-white_color font-medium">
+                      Pastor(Mrs) F.O Balogun
+                    </p>
+                    <p className="text-[13.5px] text-white_color">
+                      Head Pastor
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-44 md:gap-[132px] sm:gap-[88px]">
-            <div className="flex flex-col gap-16 sm:gap-8">
-              <div className="container-xs md:px-5">
-                <ImageSlider images={images} title={"Head Church Ministers"} />
+          {isClient && (
+            <div className="flex flex-col gap-44 md:gap-[132px] sm:gap-[88px]">
+              <div className="flex flex-col gap-16 sm:gap-8">
+                <div className="container-xs md:px-5">
+                  <ImageSlider
+                    images={images}
+                    title={"Head Church Ministers"}
+                  />
+                </div>
+              </div>
+              <div className="flex flex-col gap-16 sm:gap-8">
+                <div className="container-xs md:px-5">
+                  <ImageSlider images={images} title={"Next Gen Ministers"} />
+                </div>
+              </div>
+              <div className="flex flex-col gap-16 sm:gap-8">
+                <div className="container-xs md:px-5">
+                  <ImageSlider
+                    images={images}
+                    title={"Our Head of Departments"}
+                  />
+                </div>
               </div>
             </div>
-            <div className="flex flex-col gap-16 sm:gap-8">
-              <div className="container-xs md:px-5">
-                <ImageSlider images={images} title={"Next Gen Ministers"} />
-              </div>
-            </div>
-            <div className="flex flex-col gap-16 sm:gap-8">
-              <div className="container-xs md:px-5">
-                <ImageSlider images={images} title={"Our Head of Departments"} />
-              </div>
-            </div>
-          </div>
+          )}
         </div>
 
         {/* about us section */}
