@@ -2,6 +2,7 @@
 import "@/styles/tailwind.css";
 import "../styles/index.css";
 import "../styles/font.css";
+import { LoadingProvider } from "../context/LoadingContext";
 
 export const metadata = {
     title: "Welcome to RCCG Rod Of God Parish, Indianapolis - Home",
@@ -19,7 +20,11 @@ function RootLayout({ children }) {
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body>{children}</body>
+      <body>
+        <LoadingProvider>
+          {children}
+        </LoadingProvider>
+      </body>
     </html>
   );
 }

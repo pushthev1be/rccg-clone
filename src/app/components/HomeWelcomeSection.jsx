@@ -46,13 +46,13 @@ export default function HomeWelcomeSection() {
     <>
       {/* home welcome section */}
       <div className="flex justify-center">
-        <div className="w-full px-24 flex items-start justify-center gap-9 md:flex-col md:px-5">
-          <div className="mb-[186px] flex flex-1 flex-col items-start gap-14 md:self-stretch sm:gap-7 ">
-            <div className="flex flex-col items-start gap-5 self-stretch ">
+        <div className="w-full px-24 flex flex-col items-start justify-center gap-9 md:flex-col md:px-5">
+          <div className="mb-[120px] sm:mb-0 flex flex-1 flex-col items-start gap-14 md:self-stretch sm:gap-7 ">
+            <div className="flex flex-col items-start gap-5 self-stretch">
               <Heading
                 size="headingxl"
                 as="h1"
-                className="lg:text-[80px] font-semibold leading-[100%] !text-white_color md:text-[48px] sm:text-[32px]"
+                className="lg:text-[96px] font-semibold leading-[100%] !text-white_color md:text-[48px] sm:text-[32px]"
               >
                 <>
                   Welcome to the
@@ -80,8 +80,10 @@ export default function HomeWelcomeSection() {
               Learn more
             </Button>
           </div>
-          <div className="flex w-[24%] flex-col gap-4 self-end rounded-[12px] bg-gray-900_01 p-[18px] md:w-full">
-            <div className="flex flex-col items-start gap-2.5">
+          <div className="flex justify-end w-full">
+
+          <div className="flex flex-col gap-4 self-end rounded-[12px] bg-gray-900_01 p-[18px] sm:w-full  md:w-[302px] lg:w-[302px]">
+            <div className="flex flex-col items-start gap-2.5 h-[70px]">
               <Text as="p" className="!font-poppins text-[16px] font-normal">
                 {texts[currentIndex].verse}
               </Text>
@@ -98,9 +100,19 @@ export default function HomeWelcomeSection() {
             <div className="mb-1 flex items-center justify-end">
               <button onClick={handlePauseToggle} className="cursor-pointer">
                 {isPaused ? (
-                  <Play width={16} height={16} className="h-[16px]" color="white" />
+                  <Play
+                    width={16}
+                    height={16}
+                    className="h-[16px]"
+                    color="white"
+                  />
                 ) : (
-                  <Pause width={16} height={16} className="h-[16px]" color="white" />
+                  <Pause
+                    width={16}
+                    height={16}
+                    className="h-[16px]"
+                    color="white"
+                  />
                 )}
               </button>
               <div className="flex w-[28%] justify-center gap-1.5">
@@ -115,6 +127,7 @@ export default function HomeWelcomeSection() {
                 ))}
               </div>
             </div>
+          </div>
           </div>
         </div>
       </div>

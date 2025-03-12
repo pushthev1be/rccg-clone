@@ -23,9 +23,9 @@ export default function CommunityHighlightsSection() {
   return (
     <>
       {/* community highlights section */}
-      <div className="mt-[366px] self-stretch">
-        <div className="flex flex-col items-center bg-charcoal py-40 md:py-5">
-          <div className="container-xs mb-[72px] flex flex-col items-center gap-[146px] md:gap-[109px] md:px-5 sm:gap-[73px]">
+      <div className="mt-[366px] sm:mt-[90px] self-stretch">
+        <div className="flex flex-col items-center bg-charcoal lg:py-40 md:py-5 sm:py-5">
+          <div className="container-xs mb-[72px] flex flex-col sm:pt-6 items-center gap-[146px] md:gap-[109px] md:px-5 sm:gap-0">
             <Text
               size="text2xl"
               as="p"

@@ -10,12 +10,12 @@ export default function ServicesAndEventsSection() {
   return (
     <>
       {/* services and events section */}
-      <div className="mt-[196px] flex flex-col items-center gap-[74px] md:gap-[55px] sm:gap-[37px]">
+      <div className="mt-[196px] flex flex-col items-center gap-[74px] md:mt-28 sm:mt-20 md:gap-[55px] sm:gap-[37px]">
         <div className="container-xs flex flex-col items-center px-14 md:px-5">
           <div className="flex w-[66%] flex-col items-center gap-8 md:w-full">
             <Heading
               as="h2"
-              className="text-center text-[40px] font-semibold leading-[100%] md:text-[38px] sm:text-[36px]"
+              className="text-center text-[40px] font-semibold leading-[100%] lg:text-[36px] md:text-[32px] sm:text-[28px]"
             >
               <>
                 Weekly and Monthly
@@ -33,12 +33,12 @@ export default function ServicesAndEventsSection() {
             </Text>
           </div>
         </div>
-        <div className="flex w-full flex-col gap-[58px] self-end sm:gap-[29px]">
+        <div className="flex w-full flex-col gap-12 self-end md:gap-10 sm:gap-8">
           <div className="container-xs flex flex-col items-start md:px-5">
             <Heading
               size="headings"
               as="h3"
-              className="text-[32px] font-semibold md:text-[30px] sm:text-[28px]"
+              className="text-[32px] font-semibold lg:text-[30px] md:text-[28px] sm:text-[24px]"
             >
               Weekly
             </Heading>
@@ -50,25 +50,27 @@ export default function ServicesAndEventsSection() {
               responsive={{
                 0: { items: 1 },
                 551: { items: 1 },
-                1051: { items: 2 },
+                768: { items: 1 },
+                1051: { items: 3 },
               }}
-              paddingLeft={100}
-              paddingRight={113}
+              paddingLeft={0}
+              paddingRight={0}
               disableDotsControls
               activeIndex={sliderState}
               onSlideChanged={(e) => {
                 setSliderState(e?.item);
               }}
               ref={sliderRef}
+              className="w-full sm:px-0"
               items={[...Array(12)].map(() => (
                 <React.Fragment key={Math.random()}>
-                  <div className="px-3">
-                    <div className="flex flex-col justify-center gap-[138px] rounded-[16px] border border-solid border-gray-300 bg-white_color px-[18px] py-[42px] md:gap-[103px] md:p-5 sm:gap-[69px]">
+                  <div className="px-3 md:px-2 sm:px-4">
+                    <div className="flex flex-col justify-center gap-[138px] rounded-[16px] border border-solid border-gray-300 bg-white_color px-[18px] py-[42px] md:gap-[103px] md:p-5 sm:gap-[69px] w-full">
                       <div className="flex flex-col items-start gap-2">
                         <Text
                           size="textlg"
                           as="p"
-                          className="text-[24px] font-medium !text-gray-900 md:text-[22px]"
+                          className="text-[24px] font-medium !text-gray-900 lg:text-[22px] md:text-[20px] sm:text-[18px]"
                         >
                           Sunday Prayer Meeting
                         </Text>
@@ -137,47 +139,33 @@ export default function ServicesAndEventsSection() {
             />
           </div>
         </div>
-        {/* <div className="flex w-full flex-col gap-[58px] self-end sm:gap-[29px]">
-          <div className="container-xs flex flex-col items-start md:px-5">
-            <Heading
-              size="headings"
-              as="h3"
-              className="text-[32px] font-semibold md:text-[30px] sm:text-[28px]"
+        <div className="container-xs flex items-center justify-between w-full mt-6 md:px-5">
+          <Img
+            src="img_status.svg"
+            width={46}
+            height={30}
+            alt="Status"
+            className="h-[30px] w-[4%] rounded-[50%]"
+          />
+          <div className="flex gap-4 px-8 sm:px-5">
+            <Button
+              shape="circle"
+              onClick={() => {
+                sliderRef?.current?.slidePrev();
+              }}
+              className="w-[60px] rounded-[30px] border border-solid border-gray-400 px-[18px] hover:bg-[#4D88FF] hover:text-white_color hover:border-[#4D88FF] transition-colors"
             >
-              Monthly
-            </Heading>
-          </div>
-
-        </div> */}
-        <div className="container-xs md:px-5">
-          <div className="flex items-center">
-            <Img
-              src="img_status.svg"
-              width={46}
-              height={30}
-              alt="Status"
-              className="h-[30px] w-[4%] rounded-[50%]"
-            />
-            <div className="flex flex-1 justify-end gap-4 px-8 sm:px-5">
-              <Button
-                shape="circle"
-                onClick={() => {
-                  sliderRef?.current?.slidePrev();
-                }}
-                className="w-[60px] rounded-[30px] border border-solid border-gray-400 px-[18px] hover:bg-[#4D88FF] hover:text-white_color hover:border-[#4D88FF] transition-colors"
-              >
-                <Img src="img_arrow_left.svg" width={24} height={24} />
-              </Button>
-              <Button
-                shape="circle"
-                onClick={() => {
-                  sliderRef?.current?.slideNext();
-                }}
-                className="w-[60px] rotate-[-180deg] rounded-[30px] border border-solid border-gray-400 px-[18px] hover:bg-[#4D88FF] hover:text-white_color hover:border-[#4D88FF] transition-colors"
-              >
-                <Img src="img_arrow_left.svg" width={24} height={24} />
-              </Button>
-            </div>
+              <Img src="img_arrow_left.svg" width={24} height={24} />
+            </Button>
+            <Button
+              shape="circle"
+              onClick={() => {
+                sliderRef?.current?.slideNext();
+              }}
+              className="w-[60px] rotate-[-180deg] rounded-[30px] border border-solid border-gray-400 px-[18px] hover:bg-[#4D88FF] hover:text-white_color hover:border-[#4D88FF] transition-colors"
+            >
+              <Img src="img_arrow_left.svg" width={24} height={24} />
+            </Button>
           </div>
         </div>
       </div>

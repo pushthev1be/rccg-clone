@@ -33,9 +33,12 @@
     ]
   },
   "devDependencies": {
+    "@types/node": "22.13.10",
+    "@types/react": "19.0.10",
     "autoprefixer": "10.4.2",
     "postcss": "^8.5.3",
-    "tailwindcss": "3.4.6"
+    "tailwindcss": "3.4.6",
+    "typescript": "5.8.2"
   },
   "engines": {
     "node": ">=18.17.0"

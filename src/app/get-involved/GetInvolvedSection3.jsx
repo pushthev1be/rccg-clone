@@ -13,7 +13,6 @@ const dropDownOptions = [
   { label: "NEW ZEALAND", value: "NEW ZEALAND" },
   { label: "SOUTH AFRICA", value: "SOUTH AFRICA" },
   { label: "GHANA", value: "GHANA" },
-
 ];
 
 export default function GetInvolvedSection3() {
@@ -43,36 +42,26 @@ export default function GetInvolvedSection3() {
   return (
     <>
       {/* get involved section */}
-      <div className="flex h-[1024px] flex-col items-center justify-end bg-[url(/images/img_group_1024x1440.png)] bg-cover bg-no-repeat pt-[274px] md:h-auto md:pt-5">
-        <div className="container-xs flex flex-col items-center gap-[274px] md:gap-[150px] sm:gap-[100px] md:px-5">
-          <div className="flex flex-col items-center gap-[62px] self-stretch md:gap-[31px]">
-            <div className="mx-[218px] flex flex-col items-center gap-[22px] self-stretch md:mx-0">
-              <Heading as="h2" className="text-[40px] font-semibold !text-white_color md:text-[38px] sm:text-[36px]">
-                Contact us
-              </Heading>
-              <Text
-                as="p"
-                className="self-stretch text-center !font-poppins text-[16px] font-light leading-[120%]"
-              >
-                Join us as we celebrate the beginning of forever. With love in their hearts and joy to share, Nina and
-                Chris invite you to witness their journey as they say "I do."
-              </Text>
-            </div>
-            <div className="flex flex-col items-center gap-6 self-stretch">
-              <div className="flex flex-col items-start gap-2">
-                <Text as="p" className="text-[16px] font-normal">
+      <div className="flex min-h-[800px] flex-col justify-center bg-[url(/images/img_group_138.png)] bg-cover bg-center bg-no-repeat py-16 md:py-12 sm:py-10 sm:mt-12 md:mt-20 lg:mt-24">
+        <div className="container-xs md:px-5">
+          <div className="flex items-start justify-between lg:flex-row md:flex-col gap-10">
+            {/* Contact Form Section - Left side */}
+            <div className="flex flex-col items-start gap-6 w-full max-w-[600px] md:max-w-full">
+              <div className="flex flex-col items-start gap-2 w-full">
+                <Text as="p" className="text-[16px] font-normal text-white">
                   Name
                 </Text>
                 <Input
                   shape="round"
                   name="name"
-                  placeholder={`John doe`}
-                  className="w-[58%] rounded-lg border border-solid border-blue_gray-100_01 px-4"
+                  placeholder="John doe"
+                  className="w-full rounded-lg border border-solid border-blue_gray-100_01 px-4 h-[56px]"
                 />
               </div>
-              <div className="flex w-[58%] gap-10 sm:flex-col">
+
+              <div className="flex w-full gap-6 sm:flex-col">
                 <div className="flex basis-1/2 flex-col items-start gap-2 sm:w-full">
-                  <Text as="p" className="text-[16px] font-normal">
+                  <Text as="p" className="text-[16px] font-normal text-white">
                     Country
                   </Text>
                   <SelectBox
@@ -87,16 +76,16 @@ export default function GetInvolvedSection3() {
                       />
                     }
                     name="country"
-                    placeholder={`USA`}
+                    placeholder="USA"
                     options={dropDownOptions}
-                    className="gap-4 self-stretch rounded-lg border border-solid border-blue_gray-100_01 px-2"
+                    className="w-full h-[56px] gap-4 rounded-lg border border-solid border-blue_gray-100_01 px-4"
                   />
                 </div>
                 <div className="flex basis-1/2 flex-col items-start gap-2 sm:w-full">
-                  <Text as="p" className="text-[16px] font-normal">
+                  <Text as="p" className="text-[16px] font-normal text-white">
                     Phone
                   </Text>
-                  <div className="flex h-[56px] items-center justify-center rounded-lg border border-solid border-blue_gray-100_01 bg-white_color px-1">
+                  <div className="flex h-[56px] w-full items-center justify-start rounded-lg border border-solid border-blue_gray-100_01 bg-white_color px-3">
                     <SelectBox
                       options={countryOptions}
                       defaultValue={countryOptions.find((option) => option.value === "US")}
@@ -105,53 +94,59 @@ export default function GetInvolvedSection3() {
                     <input
                       name="edittext"
                       type="tel"
+                      placeholder=""
                       className="ml-1.5 flex h-[20px] flex-grow items-center justify-center border-none px-3 outline-none"
                     />
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col items-start gap-2">
-                <Text as="p" className="text-[16px] font-normal">
+
+              <div className="flex flex-col items-start gap-2 w-full">
+                <Text as="p" className="text-[16px] font-normal text-white">
                   Email Address
                 </Text>
                 <Input
                   shape="round"
                   type="email"
                   name="email"
-                  placeholder={`johndoe@gmail.com`}
-                  className="w-[58%] rounded-lg border border-solid border-blue_gray-100_01 px-4"
+                  placeholder="johndoe@gmail.com"
+                  className="w-full rounded-lg border border-solid border-blue_gray-100_01 px-4 h-[56px]"
                 />
               </div>
-              <div className="flex flex-col items-start gap-2">
-                <Text as="p" className="text-[16px] font-normal">
+
+              <div className="flex flex-col items-start gap-2 w-full">
+                <Text as="p" className="text-[16px] font-normal text-white">
                   Message
                 </Text>
                 <TextArea
                   shape="round"
                   name="form_one"
-                  placeholder={`Leave a message...`}
-                  className="w-[58%] md:w-[80%] sm:w-full rounded-lg !border !border-blue_gray-100_01 px-4 text-gray-400_01"
+                  placeholder="Leave a message..."
+                  className="w-full rounded-lg !border !border-solid !border-blue_gray-100_01 px-4 py-3 min-h-[160px] text-gray-400_01"
                 />
               </div>
+
+              <Button
+                color="blue_A400"
+                size="md"
+                className="mt-2 rounded-[16px] px-10 py-4 bg-[#4D88FF] text-white_color border-none hover:bg-blue-600 transition-colors w-full md:w-full sm:w-full"
+              >
+                Contact us
+              </Button>
             </div>
-            <Button
-              color="blue_A400"
-              size="md"
-              className="min-w-[486px] md:min-w-[300px] sm:min-w-full rounded-[16px] px-[34px] sm:px-5 hover:bg-[#4D88FF] hover:text-white_color hover:border-[#4D88FF] transition-colors"
-            >
-              Contact us
-            </Button>
-          </div>
-          <div className="flex flex-col items-start gap-0.5 self-end md:self-center">
-            <Heading as="h2" className="text-[40px] font-semibold !text-white_color md:text-[38px] sm:text-[36px]">
-              The Church Address
-            </Heading>
-            <Text size="textmd" as="p" className="text-[20px] font-normal md:text-[18px]">
-              5350 Allied Blvd, Indianapolis, IN
-            </Text>
-            <Text size="textmd" as="p" className="text-[20px] font-normal md:text-[18px]">
-              Visit and Worship with us.
-            </Text>
+
+            {/* Church Address Section - Right side */}
+            <div className="flex flex-col items-start gap-4 self-end md:self-center md:mt-8 md:mb-10">
+              <Heading as="h2" className="text-[40px] font-semibold !text-white_color lg:text-[36px] md:text-[32px] sm:text-[28px]">
+                The Church Address
+              </Heading>
+              <Text size="textmd" as="p" className="text-[20px] font-normal text-white md:text-[18px]">
+                5350 Allied Blvd, Indianapolis, IN
+              </Text>
+              <Text size="textmd" as="p" className="text-[20px] font-normal text-white md:text-[18px]">
+                Visit and Worship with us.
+              </Text>
+            </div>
           </div>
         </div>
       </div>

@@ -26,14 +26,13 @@ export default function ServicesEventsPage() {
         {/* services and events section */}
         <ServicesAndEventsSection />
 
-          {/* services events section */}
-          <ServicesEventsSection1 />
-
+        {/* services events section */}
+        <ServicesEventsSection1 />
 
         {/* services events section */}
         <ServicesEventsSection2 />
       </div>
-      <Footer className="mt-[350px]" />
+      <Footer className="mt-[196px] md:mt-28 sm:mt-20" />
     </div>
   );
 }

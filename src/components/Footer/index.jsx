@@ -93,7 +93,7 @@ export default function Footer({ ...props }) {
                 </li>
               </ul>
             </div>
-            <div className="flex flex-col items-start gap-3">
+            {/* <div className="flex flex-col items-start gap-3">
               <Text size="textmd" as="p" className="text-[20px] font-normal !text-alternate">
                 SHOP
               </Text>
@@ -113,7 +113,7 @@ export default function Footer({ ...props }) {
                   </Link>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
           <div className="flex w-[42%] flex-col items-start gap-4 sm:w-full">
             <Text size="textmd" as="p" className="text-[20px] font-normal !text-alternate">

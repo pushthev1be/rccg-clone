@@ -48,7 +48,7 @@ export default function ServiceTimesSection() {
   return (
     <>
       {/* service times section */}
-      <div className="mt-[290px] flex flex-col items-center self-stretch">
+      <div className="mt-[290px] sm:mt-[90px] flex flex-col items-center self-stretch">
         <div className="container-xs flex flex-col items-center gap-[62px] px-[26px] md:px-5 sm:gap-[31px]">
           <div className="mx-[218px] flex flex-col items-center gap-[22px] self-stretch md:mx-0">
             <Heading as="h2" className="text-[40px] font-semibold md:text-[38px] sm:text-[36px]">

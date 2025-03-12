@@ -10,13 +10,13 @@ export default function ServicesEventsSection2() {
   return (
     <>
       {/* services events section */}
-      <div className="mt-[278px] flex flex-col gap-[72px] md:gap-[54px] sm:gap-9">
+      <div className="mt-[196px] flex flex-col gap-[72px] md:mt-28 sm:mt-20 md:gap-[54px] sm:gap-9">
         <div className="container-xs md:px-5">
-          <div className="flex items-start justify-center sm:flex-col">
-            <Heading as="h2" className="text-[40px] font-semibold md:text-[38px] sm:text-[36px]">
+          <div className="flex items-start justify-between md:flex-wrap sm:flex-col">
+            <Heading as="h2" className="text-[40px] font-semibold lg:text-[36px] md:text-[32px] sm:text-[28px]">
               Upcoming events
             </Heading>
-            <div className="flex flex-1 justify-end gap-4 self-end sm:self-stretch">
+            <div className="flex gap-4 self-end mt-4 sm:self-start sm:mt-6">
               <Button
                 onClick={() => {
                   sliderRef?.current?.slidePrev();
@@ -38,37 +38,43 @@ export default function ServicesEventsSection2() {
             </div>
           </div>
         </div>
-        <div className="mx-auto flex w-full overflow-x-scroll">
+        <div className="mx-auto flex w-full overflow-x-hidden">
           <Slider
             autoPlay
             autoPlayInterval={2000}
-            responsive={{ 0: { items: 1 }, 551: { items: 1 }, 1051: { items: 1 } }}
+            responsive={{
+              0: { items: 1 },
+              551: { items: 1 },
+              768: { items: 1 },
+              1200: { items: 1 }
+            }}
             disableDotsControls
             activeIndex={sliderState}
             onSlideChanged={(e) => {
               setSliderState(e?.item);
             }}
             ref={sliderRef}
+            className="w-full md:px-5 sm:px-2"
             items={[...Array(3)].map(() => (
               <React.Fragment key={Math.random()}>
-                <div className="flex gap-[18px] md:flex-col">
+                <div className="flex gap-[18px] md:flex-col px-3 sm:px-0">
                   <div className="flex w-full flex-col gap-[30px] md:px-5">
                     <Img
                       src="img_edwin_andrade_4.png"
                       width={808}
                       height={744}
                       alt="Edwinandradefou"
-                      className="mr-1.5 h-[744px] object-cover md:mr-0 md:h-auto md:w-full"
+                      className="mr-1.5 h-[744px] object-cover md:mr-0 md:h-auto md:w-full lg:max-h-[600px]"
                     />
                     <div className="flex flex-col items-start gap-[30px]">
                       <Heading
                         size="headingxs"
                         as="h3"
-                        className="text-[24px] font-bold !text-gray-900_02 md:text-[22px]"
+                        className="text-[24px] font-bold !text-gray-900_02 lg:text-[22px] md:text-[20px] sm:text-[18px]"
                       >
                         Salvation Celebration
                       </Heading>
-                      <Text size="textmd" as="p" className="text-[20px] font-normal leading-6 !text-gray-600_01">
+                      <Text size="textmd" as="p" className="text-[20px] font-normal leading-6 !text-gray-600_01 lg:text-[18px] md:text-[16px]">
                         <>
                           Lörem ipsum prelig trekånar i prenyde. Rektigt nelig osk och vare, emedan tåk. Trollfilt
                           <br />
@@ -86,11 +92,11 @@ export default function ServicesEventsSection2() {
                             alt="Navigation"
                             className="h-[24px]"
                           />
-                          <Text size="textmd" as="p" className="text-[20px] font-normal !text-blue-a400">
+                          <Text size="textmd" as="p" className="text-[20px] font-normal !text-blue-a400 lg:text-[18px] md:text-[16px]">
                             Parish House Indianapolis.
                           </Text>
                         </div>
-                        <div className="flex flex-1 items-center gap-2 px-4 sm:self-stretch">
+                        <div className="flex flex-1 items-center gap-2 px-4 sm:px-0 sm:pt-2 sm:self-stretch">
                           <Img
                             src="img_calendar_calendar.svg"
                             width={24}
@@ -98,7 +104,7 @@ export default function ServicesEventsSection2() {
                             alt="Calendar"
                             className="h-[24px]"
                           />
-                          <Text size="textmd" as="p" className="text-[20px] font-normal !text-blue-a400">
+                          <Text size="textmd" as="p" className="text-[20px] font-normal !text-blue-a400 lg:text-[18px] md:text-[16px]">
                             10th January 2025
                           </Text>
                         </div>
@@ -111,16 +117,16 @@ export default function ServicesEventsSection2() {
                       width={808}
                       height={744}
                       alt="Worshae"
-                      className="mr-1.5 h-[744px] w-full object-cover md:mr-0 md:h-auto"
+                      className="mr-1.5 h-[744px] w-full object-cover md:mr-0 md:h-auto lg:max-h-[600px]"
                     />
                     <Heading
                       size="headingxs"
                       as="h4"
-                      className="text-[24px] font-bold !text-gray-900_02 md:text-[22px]"
+                      className="text-[24px] font-bold !text-gray-900_02 lg:text-[22px] md:text-[20px] sm:text-[18px]"
                     >
                       Youth Event
                     </Heading>
-                    <Text size="textmd" as="p" className="text-[20px] font-normal leading-6 !text-gray-600_01">
+                    <Text size="textmd" as="p" className="text-[20px] font-normal leading-6 !text-gray-600_01 lg:text-[18px] md:text-[16px]">
                       <>
                         Lörem ipsum prelig trekånar i prenyde. Rektigt nelig osk och vare, emedan tåk. Trollfilt
                         <br />
@@ -138,11 +144,11 @@ export default function ServicesEventsSection2() {
                           alt="Navigation"
                           className="h-[24px]"
                         />
-                        <Text size="textmd" as="p" className="text-[20px] font-normal !text-blue-a400">
+                        <Text size="textmd" as="p" className="text-[20px] font-normal !text-blue-a400 lg:text-[18px] md:text-[16px]">
                           Parish House Indianapolis.
                         </Text>
                       </div>
-                      <div className="flex flex-1 items-center gap-2 px-4 sm:self-stretch">
+                      <div className="flex flex-1 items-center gap-2 px-4 sm:px-0 sm:pt-2 sm:self-stretch">
                         <Img
                           src="img_calendar_calendar.svg"
                           width={24}
@@ -150,7 +156,7 @@ export default function ServicesEventsSection2() {
                           alt="Calendar"
                           className="h-[24px]"
                         />
-                        <Text size="textmd" as="p" className="text-[20px] font-normal !text-blue-a400">
+                        <Text size="textmd" as="p" className="text-[20px] font-normal !text-blue-a400 lg:text-[18px] md:text-[16px]">
                           16th January 2025
                         </Text>
                       </div>

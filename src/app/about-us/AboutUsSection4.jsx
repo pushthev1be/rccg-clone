@@ -113,52 +113,43 @@ export default function AboutUsSection4() {
   return (
     <>
       {/* about us section */}
-      <div className="mt-[468px] flex flex-col items-center">
-        <div className="flex w-[88%] flex-col gap-[146px] md:w-full md:gap-[109px] md:px-5 sm:gap-[73px]">
-          <div className="mx-[246px] flex flex-col items-center gap-[18px] md:mx-0">
-            <Heading as="h2" className="text-[40px] font-semibold md:text-[38px] sm:text-[36px]">
-              Our Departments
+      <div className="mt-[146px] flex flex-col items-center md:mt-24 sm:mt-16">
+        <div className="container-xs flex flex-col items-center px-14 md:px-8 sm:px-5">
+          <div className="flex w-[66%] flex-col items-center gap-[22px] md:w-full">
+            <Heading
+              as="h2"
+              className="text-[40px] font-semibold text-center lg:text-[36px] md:text-[32px] sm:text-[28px]"
+            >
+              SERVICE DEPARTMENTS
             </Heading>
             <Text
               as="p"
-              className="self-stretch text-center !font-poppins text-[16px] font-light leading-[120%] !text-charcoal"
+              className="self-stretch text-center !font-poppins text-[16px] font-light leading-[130%] !text-charcoal md:text-[15px] sm:text-[14px]"
             >
-              Join us as we celebrate the beginning of forever. With love in their hearts and joy to share, Nina and
-              Chris invite you to witness their journey as they say "I do."
+              <>
+                Lörem ipsum desöhet onde prer sugt, an teliga. Prement lar
+                <br className="md:hidden" />
+                minyn sugt, an teliga. Lörem ipsum desöhet onde prer sugt,
+                <br className="md:hidden" />
+                an teliga. Prement larminyn sugt, an teliga.
+              </>
             </Text>
           </div>
-          <div className="flex gap-5 md:flex-col">
-            <UserProfile className="w-[50%] md:w-full" />
-            <UserProfile
-              userImage="img_dsc_9200.png"
-              userTitle="Sunday School"
-              userDescription={
-                <>
-                  Lörem ipsum desöhet onde prer sugt, an teliga. Prement lar
-                  <br />
-                  minyn sugt, an teliga. Lörem ipsum desöhet onde prer sugt,
-                  <br />
-                  an teliga. Prement larminyn sugt, an teliga.
-                </>
-              }
-              className="w-[50%] md:w-full"
-            />
-          </div>
         </div>
-        <div className="mt-[146px] grid w-[88%] grid-cols-2 justify-center gap-[26px] gap-y-[146px] md:grid-cols-1">
+        <div className="mt-[146px] grid w-[88%] grid-cols-2 justify-center gap-[26px] gap-y-[146px] md:mt-20 sm:mt-16 md:grid-cols-1 md:gap-y-[90px] sm:gap-y-[70px]">
           <Suspense fallback={<div>Loading feed...</div>}>
             {serviceDepartmentGrid.map((d, index) => (
               <UserProfile {...d} key={"aboutUs" + index} className="w-full" />
             ))}
           </Suspense>
         </div>
-        <div className="container-xs mt-[196px] px-[30px] md:px-5">
-          <div className="ml-3 flex items-center md:ml-0 md:flex-col">
-            <div className="flex w-[38%] flex-col items-start gap-[30px] md:w-full">
+        <div className="container-xs mt-[196px] px-[30px] md:mt-24 sm:mt-16 md:px-8 sm:px-5">
+          <div className="ml-3 flex items-center md:ml-0 md:flex-col md:gap-10">
+            <div className="flex w-[38%] flex-col items-start gap-[30px] md:w-full md:items-center">
               <Text
                 size="text2xl"
                 as="p"
-                className="ml-9 text-center text-[40px] font-normal leading-[100%] !text-charcoal md:ml-0 md:text-[38px] sm:text-[36px]"
+                className="ml-9 text-center text-[40px] font-normal leading-[100%] !text-charcoal md:ml-0 lg:text-[36px] md:text-[32px] sm:text-[28px]"
               >
                 <>
                   Come worship
@@ -166,7 +157,10 @@ export default function AboutUsSection4() {
                   with us
                 </>
               </Text>
-              <Text as="p" className="text-center text-[16px] font-normal leading-[19px] !text-gray-600_01">
+              <Text
+                as="p"
+                className="text-center text-[16px] font-normal leading-[130%] !text-gray-600_01 md:text-[15px] sm:text-[14px]"
+              >
                 <>
                   Come worship with us every Sunday.
                   <br />
@@ -188,14 +182,18 @@ export default function AboutUsSection4() {
                 Next Gen Live
               </Button>
             </div>
-            <div className="flex h-[630px] flex-1 items-start justify-center rounded-[20px] bg-[url(/images/img_verse.png)] bg-cover bg-no-repeat px-14 py-[194px] md:h-auto md:self-stretch md:p-5">
-              <div className="mb-3 flex w-[66%] justify-center rounded-[20px] border border-solid border-gray-400 bg-gray-100 px-[38px] py-[66px] md:w-full md:py-5 sm:p-5">
-                <Text size="textmd" as="p" className="w-full text-[20px] font-normal leading-6 !text-charcoal">
+            <div className="flex h-[630px] flex-1 items-start justify-center rounded-[20px] bg-[url(/images/img_verse.png)] bg-cover bg-no-repeat px-14 py-[194px] md:h-auto md:w-full md:py-16 sm:py-12 sm:px-5">
+              <div className="mb-3 flex w-[66%] justify-center rounded-[20px] border border-solid border-gray-400 bg-gray-100 px-[38px] py-[66px] md:w-full md:px-6 md:py-10 sm:py-8 sm:px-5">
+                <Text
+                  size="textmd"
+                  as="p"
+                  className="w-full text-[20px] font-normal leading-[130%] !text-charcoal lg:text-[18px] md:text-[16px]"
+                >
                   <span className="text-gray-600_01">
                     <>
                       For where two or three gather in my
-                      <br />
-                      name, there am I with them.”
+                      <br className="md:hidden" />
+                      name, there am I with them."
                       <br />
                     </>
                   </span>
@@ -204,7 +202,9 @@ export default function AboutUsSection4() {
                       <br />
                     </>
                   </span>
-                  <span className="font-medium text-charcoal">— Matthew 18:20 (NIV)</span>
+                  <span className="font-medium text-charcoal">
+                    — Matthew 18:20 (NIV)
+                  </span>
                 </Text>
               </div>
             </div>
