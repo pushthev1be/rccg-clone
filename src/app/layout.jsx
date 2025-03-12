@@ -5,10 +5,10 @@ import "../styles/font.css";
 import { LoadingProvider } from "../context/LoadingContext";
 
 export const metadata = {
-    title: "Welcome to RCCG Rod Of God Parish, Indianapolis - Home",
-    description:
-      "Join the Redeemed Christian Church of God, Rod Of God Parish in Indianapolis for spiritual growth and community events. Experience love and worship with us.",
-  };
+  title: "Welcome to RCCG Rod Of God Parish, Indianapolis - Home",
+  description:
+    "Join the Redeemed Christian Church of God, Rod Of God Parish in Indianapolis for spiritual growth and community events. Experience love and worship with us.",
+};
 
 function RootLayout({ children }) {
   return (
@@ -21,9 +21,7 @@ function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body>
-        <LoadingProvider>
-          {children}
-        </LoadingProvider>
+        <LoadingProvider>{children}</LoadingProvider>
       </body>
     </html>
   );
