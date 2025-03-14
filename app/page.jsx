@@ -13,6 +13,7 @@ import WeddingInvitationSection from "./homecomponents/WeddingInvitationSection"
 import WorshipInvitationSection from "./homecomponents/WorshipInvitationSection";
 import React, { useEffect } from "react";
 import { usePageLoading } from "../hooks/usePageLoading";
+import Link from "next/link";
 
 export default function Home() {
   // Use the loading hook
@@ -79,15 +80,17 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <Button
-            color="gray_400"
-            size="xs"
+          <Link href="/about-us">
+            <Button
+              color="gray_400"
+              size="xs"
             variant="outline"
             shape="round"
             className="min-w-[196px] rounded-[12px] !border px-[31px] !text-gray-800 sm:px-5 hover:bg-[#4D88FF] hover:text-white_color hover:border-[#4D88FF] transition-colors"
           >
-            See more info
-          </Button>
+              See more info
+            </Button>
+          </Link>
         </div>
       </div>
 

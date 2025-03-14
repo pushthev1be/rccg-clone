@@ -82,12 +82,17 @@ export default function AboutUsPage() {
                 </Text>
               </div>
               <div className="flex gap-8 self-stretch md:flex-col">
-                <div className="relative group overflow-hidden rounded-lg w-full">
+                <div className="relative group overflow-hidden rounded-[15px] w-full cursor-pointer">
                   <UserProfileImage
                     userImage="img_dsc_5797.png"
                     className="w-full"
                   />
-                  <div className="absolute bottom-0 left-0 w-full h-[30%] bg-[#181818] translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex flex-col items-center justify-center">
+                  <div
+                    className="absolute bottom-0 left-0 w-full h-[30%] bg-[#181818] flex flex-col items-center justify-center
+                    translate-y-full group-hover:translate-y-0
+                    sm:translate-y-0
+                    transition-transform duration-300 ease-in-out"
+                  >
                     <p className="text-[20px] text-white_color font-medium">
                       Pastor J.K Balogun
                     </p>
@@ -96,12 +101,17 @@ export default function AboutUsPage() {
                     </p>
                   </div>
                 </div>
-                <div className="relative group overflow-hidden rounded-lg w-full">
+                <div className="relative group overflow-hidden rounded-[15px] w-full cursor-pointer">
                   <UserProfileImage
                     userImage="img_dsc_9587.png"
                     className="w-full"
                   />
-                  <div className="absolute bottom-0 left-0 w-full h-[30%] bg-[#181818] translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex flex-col items-center justify-center">
+                  <div
+                    className="absolute bottom-0 left-0 w-full h-[30%] bg-[#181818] flex flex-col items-center justify-center
+                    translate-y-full group-hover:translate-y-0
+                    sm:translate-y-0
+                    transition-transform duration-300 ease-in-out"
+                  >
                     <p className="text-[20px] text-white_color font-medium">
                       Pastor(Mrs) F.O Balogun
                     </p>
@@ -111,16 +121,41 @@ export default function AboutUsPage() {
                   </div>
                 </div>
               </div>
+              {/* <Link href="/about-us">
               <Button
                 size="xs"
                 shape="round"
                 className="self-center min-w-[196px] rounded-[12px] border border-solid border-gray-400 px-[33px] sm:px-5 hover:bg-[#4D88FF] hover:text-white_color hover:border-[#4D88FF] transition-colors"
               >
-                See all ministers
-              </Button>
+                  See all ministers
+                </Button>
+              </Link> */}
             </div>
           </div>
         </div>
+
+        {isClient && (
+          <div className="flex flex-col gap-44 md:gap-[132px] sm:gap-[88px] mt-[100px]">
+            <div className="flex flex-col gap-16 sm:gap-8">
+              <div className="container-xs md:px-5">
+                <ImageSlider images={images} title={"Head Church Ministers"} />
+              </div>
+            </div>
+            <div className="flex flex-col gap-16 sm:gap-8">
+              <div className="container-xs md:px-5">
+                <ImageSlider images={images} title={"Next Gen Ministers"} />
+              </div>
+            </div>
+            <div className="flex flex-col gap-16 sm:gap-8">
+              <div className="container-xs md:px-5">
+                <ImageSlider
+                  images={images}
+                  title={"Our Head of Departments"}
+                />
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* about us section */}
         <AboutUsSection3 />

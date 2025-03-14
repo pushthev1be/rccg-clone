@@ -28,30 +28,11 @@ export default function AboutUsSection2() {
               className="text-[15px] font-normal leading-normal !text-gray-600_01 sm:text-[14px]"
             >
               <>
-                Lörem ipsum desöhet onde prer sugt, anteliga. Prement lar minyn.
-                <br className="md:hidden" />
-                Kroktiga bängen vosk. Presa dilig oaktat yteng: i mikroning,
-                kasas
-                <br className="md:hidden" />
-                ade.
-                <br />
-                <br />
-                Nilasam mihyns trabel premonar. Muvis abpol även om bett, härgj
-                <br className="md:hidden" />
-                ord det vill säga plade. Hypokoborade far telerutt inte
-                spevening.
-                <br className="md:hidden" />
-                Progen ask. Ananyssade homoprett meledes, ynde i fans. <br />
-                <br />
-                Vill säga plade. Hypokoborade far telerutt inte spevening.
-                Progen
-                <br className="md:hidden" />
-                ask. Ananyssade homoprett meledes, ynde i fans.onde prer sugt,
-                <br className="md:hidden" />
-                anteliga. Prement lar minyn.Kroktiga bängen vosk. Presa dilig
-                oak
-                <br className="md:hidden" />
-                tat yteng: i mikroning, kasasade.{" "}
+                RCCG Rod of God Parish was established in [2009] as part of the Redeemed Christian Church of God (RCCG) network, a global church with millions of members worldwide. From humble beginnings, God has blessed our church to grow into a thriving community of worshippers, committed to the Great Commission.
+                <br /> <br />
+                Through prayer, faith, and dedication, we have expanded our ministries, outreach programs, and impact in Indianapolis and beyond. Today, we continue to build on the vision of holiness, evangelism, and community transformation.
+
+
               </>
             </Text>
           </div>

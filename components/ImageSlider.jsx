@@ -52,7 +52,7 @@ export default function ImageSlider({ images, title }) {
     <div className="mx-auto flex w-full flex-col my-8 md:my-12 lg:my-16">
       <div className="flex justify-between items-center mb-12">
         <div className="flex items-center">
-          <h3 className="text-[40px] font-semibold md:text-[38px] sm:text-[36px]">
+          <h3 className="text-[40px] font-semibold md:text-[38px] sm:text-[30px]">
             {title}
           </h3>
         </div>

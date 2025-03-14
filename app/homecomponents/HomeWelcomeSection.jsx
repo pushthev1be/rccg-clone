@@ -1,6 +1,7 @@
 import { Img, Text, Button, Heading } from "../../components";
 import React, { useState, useEffect } from "react";
 import { Play, Pause } from "lucide-react";
+import Link from "next/link";
 
 const texts = [
   {
@@ -70,18 +71,20 @@ export default function HomeWelcomeSection() {
                 Rod Of God Parish, Indianapolis Indiana USA.
               </Text>
             </div>
-            <Button
-              color="gray_400"
-              size="xs"
+            <Link href="/about-us">
+              <Button
+                color="gray_400"
+                size="xs"
               variant="outline"
               shape="round"
               className="min-w-[196px] rounded-[12px] !border px-[33px] sm:px-5 hover:bg-[#4D88FF] hover:text-white_color hover:border-[#4D88FF] transition-colors"
             >
-              Learn more
-            </Button>
+                Learn more
+              </Button>
+            </Link>
           </div>
           <div className="flex justify-end w-full">
-            <div className="flex flex-col gap-4 self-end rounded-[12px] bg-gray-900_01 p-[18px] sm:w-full  md:w-[302px] lg:w-[302px]">
+            <div className="flex flex-col gap-4 self-end rounded-[12px] bg-gray-900_01 p-[18px] sm:w-full w-[302px] md:w-[302px] lg:w-[302px]">
               <div className="flex flex-col items-start gap-2.5 h-[70px]">
                 <Text as="p" className="!font-poppins text-[16px] font-normal">
                   {texts[currentIndex].verse}

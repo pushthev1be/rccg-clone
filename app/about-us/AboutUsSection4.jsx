@@ -3,6 +3,32 @@ import UserProfile from "../../components/UserProfile";
 import React, { Suspense } from "react";
 
 const serviceDepartmentGrid = [
+    {
+        userImage: "img_pexels_cottonbro_7520369.png",
+        userTitle: "Choir",
+        userDescription: (
+          <>
+            Lörem ipsum desöhet onde prer sugt, an teliga. Prement lar
+            <br />
+            minyn sugt, an teliga. Lörem ipsum desöhet onde prer sugt,
+            <br />
+            an teliga. Prement larminyn sugt, an teliga.
+          </>
+        ),
+      },
+      {
+        userImage: "img_dsc_9200.png",
+        userTitle: "Sunday School",
+        userDescription: (
+          <>
+            Lörem ipsum desöhet onde prer sugt, an teliga. Prement lar
+            <br />
+            minyn sugt, an teliga. Lörem ipsum desöhet onde prer sugt,
+            <br />
+            an teliga. Prement larminyn sugt, an teliga.
+          </>
+        ),
+      },
   {
     userImage: "img_dsc_9539.png",
     userTitle: "Welfare",
@@ -120,7 +146,7 @@ export default function AboutUsSection4() {
               as="h2"
               className="text-[40px] font-semibold text-center lg:text-[36px] md:text-[32px] sm:text-[28px]"
             >
-              SERVICE DEPARTMENTS
+              OUR DEPARTMENTS
             </Heading>
             <Text
               as="p"
