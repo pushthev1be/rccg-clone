@@ -86,13 +86,28 @@ export default function ImageSlider({ images, title }) {
               key={index}
               className="flex-none w-full sm:w-full md:w-1/3 lg:w-1/4 px-2"
             >
-              <Img
-                src={image.src}
-                width={350}
-                height={398}
-                alt={image.alt}
-                className="h-[398px] w-full rounded-[16px] object-cover"
-              />
+              <div className="relative group overflow-hidden rounded-[15px] cursor-pointer">
+                <Img
+                  src={image.src}
+                  width={350}
+                  height={398}
+                  alt={image.alt}
+                  className="h-[398px] w-full rounded-[15px] object-cover"
+                />
+                <div
+                  className="absolute bottom-0 left-0 w-full h-[30%] bg-[#181818] flex flex-col items-center justify-center
+                  translate-y-full group-hover:translate-y-0
+                  sm:translate-y-0
+                  transition-transform duration-300 ease-in-out"
+                >
+                  <p className="text-[20px] text-white_color font-medium">
+                    {image.title}
+                  </p>
+                  <p className="text-[13.5px] text-white_color">
+                    {image.subtitle}
+                  </p>
+                </div>
+              </div>
             </div>
           ))}
         </div>
