@@ -53,40 +53,53 @@ export default function Home() {
               witness their journey as they say "I do."
             </Text>
           </div>
-          <div className="flex gap-8 self-stretch md:gap-6 sm:gap-4 md:flex-col">
-            <div className="relative group overflow-hidden rounded-lg w-full">
-              <UserProfileImage className="w-full" />
-              <div className="absolute bottom-0 left-0 w-full h-[30%] bg-[#181818] translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex flex-col items-center justify-center">
-                <p className="text-[20px] text-white_color font-medium sm:text-[18px]">
-                  Pastor J.K Balogun
-                </p>
-                <p className="text-[13.5px] text-white_color sm:text-[12px]">
-                  Head Pastor
-                </p>
+          <div className="flex gap-8 self-stretch md:flex-col">
+                <div className="relative group overflow-hidden rounded-[15px] w-full cursor-pointer">
+                  <UserProfileImage
+                    userImage="img_dsc_5797.png"
+                    className="w-full"
+                  />
+                  <div
+                    className="absolute bottom-0 left-0 w-full h-[30%] bg-[#181818] flex flex-col items-center justify-center
+                    translate-y-full group-hover:translate-y-0
+                    sm:translate-y-0
+                    transition-transform duration-300 ease-in-out"
+                  >
+                    <p className="text-[20px] text-white_color font-medium">
+                      Pastor J.K Balogun
+                    </p>
+                    <p className="text-[13.5px] text-white_color">
+                      Head Pastor
+                    </p>
+                  </div>
+                </div>
+                <div className="relative group overflow-hidden rounded-[15px] w-full cursor-pointer">
+                  <UserProfileImage
+                    userImage="img_dsc_9587.png"
+                    className="w-full"
+                  />
+                  <div
+                    className="absolute bottom-0 left-0 w-full h-[30%] bg-[#181818] flex flex-col items-center justify-center
+                    translate-y-full group-hover:translate-y-0
+                    sm:translate-y-0
+                    transition-transform duration-300 ease-in-out"
+                  >
+                    <p className="text-[20px] text-white_color font-medium">
+                      Pastor(Mrs) F.O Balogun
+                    </p>
+                    <p className="text-[13.5px] text-white_color">
+                      Head Pastor
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="relative group overflow-hidden rounded-lg w-full">
-              <UserProfileImage
-                userImage="img_dsc_9587.png"
-                className="w-full"
-              />
-              <div className="absolute bottom-0 left-0 w-full h-[30%] bg-[#181818] translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex flex-col items-center justify-center">
-                <p className="text-[20px] text-white_color font-medium sm:text-[18px]">
-                  Pastor(Mrs) F.O Balogun
-                </p>
-                <p className="text-[13.5px] text-white_color sm:text-[12px]">
-                  Head Pastor
-                </p>
-              </div>
-            </div>
-          </div>
           <Link href="/about-us">
             <Button
               color="gray_400"
               size="xs"
             variant="outline"
             shape="round"
-            className="min-w-[196px] rounded-[12px] !border px-[31px] !text-gray-800 sm:px-5 hover:bg-[#4D88FF] hover:text-white_color hover:border-[#4D88FF] transition-colors"
+            className="min-w-[196px] rounded-[12px] !border px-[31px] text-gray-800 sm:px-5 hover:bg-[#4D88FF] hover:text-[#fff] hover:border-[#4D88FF] transition-colors"
           >
               See more info
             </Button>
