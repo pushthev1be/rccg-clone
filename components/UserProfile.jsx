@@ -18,7 +18,7 @@ export default function UserProfile({
         alt="Dsc9539"
         width={212}
         height={284}
-        className="md:h-[404px] lg:h-[450px] sm:h-[300px] w-full object-cover"
+        className="md:h-[500px] lg:h-[450px] sm:h-[300px] w-full object-cover"
       />
       <div className="flex w-full flex-col items-start gap-3 lg:py-[30px] pr-5 md:py-5 sm:py-5 px-4">
         <Text

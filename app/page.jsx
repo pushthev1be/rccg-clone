@@ -95,12 +95,10 @@ export default function Home() {
               </div>
           <Link href="/about-us">
             <Button
-              color="gray_400"
               size="xs"
-            variant="outline"
-            shape="round"
-            className="min-w-[196px] rounded-[12px] !border px-[31px] text-gray-800 sm:px-5 hover:bg-[#4D88FF] hover:text-[#fff] hover:border-[#4D88FF] transition-colors"
-          >
+              variant="outline"
+              shape="round"
+              className="min-w-[196px] rounded-[12px] !border px-[31px] text-[#333] sm:px-5 hover:bg-[#4D88FF] hover:text-white hover:border-[#4D88FF] transition-colors">
               See more info
             </Button>
           </Link>

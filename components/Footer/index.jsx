@@ -23,6 +23,7 @@ export default function Footer({ ...props }) {
           </Text>
           <div className="flex gap-5 sm:flex-col">
             <div className="flex flex-1 items-center gap-1 sm:self-stretch">
+                <Link href="https://www.instagram.com/rccg_rog" target="_blank" rel="noreferrer">
               <Text as="p" className="text-[16px] font-normal">
                 INSTAGRAM
               </Text>
@@ -33,10 +34,12 @@ export default function Footer({ ...props }) {
                 alt="Arrowarrowup"
                 className="h-[24px]"
               />
+              </Link>
             </div>
             <div className="flex flex-1 items-center gap-1 sm:self-stretch">
+                <Link href="https://www.facebook.com/RCCGRodOfGodParish" target="_blank" rel="noreferrer">
               <Text as="p" className="text-[16px] font-normal">
-                X(TWITTER)
+                Facebook
               </Text>
               <Img
                 src="img_arrow_arrow_up_right_sm.svg"
@@ -45,8 +48,10 @@ export default function Footer({ ...props }) {
                 alt="Arrowarrowup"
                 className="h-[24px]"
               />
+              </Link>
             </div>
             <div className="flex items-center gap-1">
+                <Link href="https://www.youtube.com/RCCGRodofGodParish" target="_blank" rel="noreferrer">
               <Text as="p" className="text-[16px] font-normal">
                 YOUTUBE
               </Text>
@@ -57,12 +62,13 @@ export default function Footer({ ...props }) {
                 alt="Arrowarrowup"
                 className="h-[24px]"
               />
+              </Link>
             </div>
           </div>
         </div>
         <div className="flex w-[44%] items-start justify-between gap-5 self-center md:w-full sm:flex-col">
           <div className="flex w-[42%] items-start justify-between gap-5 self-center sm:w-full">
-            <div className="flex w-[68%] flex-col items-start gap-3 self-center">
+            <div className="flex w-[85%] flex-col items-start gap-3 self-center">
               <Text
                 size="textmd"
                 as="p"
@@ -145,6 +151,26 @@ export default function Footer({ ...props }) {
               as="p"
               className="text-[20px] font-normal !text-alternate"
             >
+              Phone
+            </Text>
+            <Text
+              size="textmd"
+              as="p"
+              className="text-[20px] font-normal leading-[120%]"
+            >
+              <>
+                <a href="tel:+13174187388">
+                (317) 418-7388
+                </a>
+              </>
+            </Text>
+          </div>
+          <div className="flex w-[42%] flex-col items-start gap-4 sm:w-full">
+            <Text
+              size="textmd"
+              as="p"
+              className="text-[20px] font-normal !text-alternate"
+            >
               Location
             </Text>
             <Text
@@ -160,7 +186,7 @@ export default function Footer({ ...props }) {
                 <br />
                 5350 Allied Blvd,
                 <br />
-                Indianapolis, IN
+                Indianapolis, IN 46224
               </>
             </Text>
           </div>
