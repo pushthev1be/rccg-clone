@@ -39,7 +39,7 @@ export default function Footer({ ...props }) {
             <div className="flex flex-1 items-center gap-1 sm:self-stretch">
                 <Link href="https://www.facebook.com/RCCGRodOfGodParish" target="_blank" rel="noreferrer">
               <Text as="p" className="text-[16px] font-normal">
-                Facebook
+                FACEBOOK
               </Text>
               <Img
                 src="img_arrow_arrow_up_right_sm.svg"
