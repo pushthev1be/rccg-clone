@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button, Text } from "../../components";
 import React from "react";
 
@@ -54,13 +55,15 @@ export default function GetInvolvedSection1() {
                 difference in our community.
               </>
             </Text>
+            <Link href="https://www.givelify.com/donate/redeemed-christian-church-of-god-rccg-rod-of-god-parish-indianapolis-in-2j7wy5NTU0/donation/amount">
             <Button
               size="xs"
               shape="round"
               className="min-w-[196px] rounded-[12px] border border-solid border-gray-400 px-[33px] md:mr-0 sm:px-5 hover:bg-[#4D88FF] hover:text-white_color hover:border-[#4D88FF] transition-colors"
-            >
+              >
               Give today
             </Button>
+                </Link>
           </div>
         </div>
       </div>

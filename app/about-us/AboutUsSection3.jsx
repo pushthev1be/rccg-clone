@@ -18,9 +18,7 @@ export default function AboutUsSection3() {
               as="p"
               className="self-stretch text-center !font-poppins text-[16px] font-light leading-[130%] !text-charcoal md:text-[15px] sm:text-[14px]"
             >
-              Join us as we celebrate the beginning of forever. With love in
-              their hearts and joy to share, Nina and Chris invite you to
-              witness their journey as they say "I do."
+              At RCCG Rod of God Parish, our Youth Church is a vibrant community where young people grow in faith, purpose, and fellowship. Join us and be part of a movement for God!
             </Text>
           </div>
         </div>

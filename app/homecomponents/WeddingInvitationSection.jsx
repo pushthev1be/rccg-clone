@@ -11,10 +11,7 @@ export default function WeddingInvitationSection() {
             as="p"
             className="w-[66%] sm:w-[90%] text-center !font-poppins text-[16px] font-light leading-[130%] !text-charcoal md:text-[15px] sm:text-[14px]"
           >
-            Join us as we celebrate the beginning of forever. With love in their
-            hearts and joy to share, Nina and Chris invite you to witness their
-            journey as they say "I do." Let's make memories to cherish together
-            on this special day!
+            We are delighted to have you here! At RCCG Parish, we are a family of believers committed to worshiping God, growing in faith, and sharing His love with our community. Whether you're joining us for the first time or looking for a place to call home, we welcome you with open arms. Come experience powerful worship, life-changing teachings, and a community that cares. We look forward to worshiping with you and growing together in Christ!
           </Text>
         </div>
       </div>

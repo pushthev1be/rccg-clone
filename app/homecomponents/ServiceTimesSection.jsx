@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button, Text, Heading } from "../../components";
 import SundayServiceInfo from "../../components/SundayServiceInfo";
 import React, { Suspense } from "react";
@@ -61,9 +62,7 @@ export default function ServiceTimesSection() {
               as="p"
               className="self-stretch text-center !font-poppins text-[16px] font-light leading-[120%] !text-charcoal"
             >
-              Join us as we celebrate the beginning of forever. With love in
-              their hearts and joy to share, Nina and Chris invite you to
-              witness their journey as they say "I do."
+              Join us at RCCG Rod of God Parish for uplifting worship and powerful teachings. Our services are a time of fellowship, prayer, and spiritual growth.
             </Text>
           </div>
           <div className="flex gap-6 self-stretch md:flex-col">
@@ -73,6 +72,7 @@ export default function ServiceTimesSection() {
               ))}
             </Suspense>
           </div>
+          <Link href="/service-times" className="w-fit">
           <Button
             size="xs"
             shape="round"
@@ -80,6 +80,7 @@ export default function ServiceTimesSection() {
           >
             See more
           </Button>
+            </Link>
         </div>
       </div>
     </>

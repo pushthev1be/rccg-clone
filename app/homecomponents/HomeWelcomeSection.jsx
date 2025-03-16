@@ -5,19 +5,19 @@ import Link from "next/link";
 
 const texts = [
   {
-    verse: "Jeremiah ch. 12 v 11",
+    verse: "Ephesians 4:16 (NIV)",
     content:
-      "Lörem ipsum kror bena minylig: vägt. Pere so vis jiren inte rin. Terangen por. Didadat epp nusm. Minde dilase.",
+      "From him the whole body, joined and held together by every supporting ligament, grows and builds itself up in love, as each part does its work",
   },
   {
-    verse: "Jeremiah ch. 12 v 12",
+    verse: "Colossians 3:14 (NIV)",
     content:
-      "Another example text for the second slide. This is just a placeholder text.",
+      "And over all these virtues put on love, which binds them all together in perfect unity",
   },
   {
-    verse: "Jeremiah ch. 12 v 13",
+    verse: "1 Corinthians 10:17 (NIV)",
     content:
-      "Yet another example text for the third slide. More placeholder text here.",
+      "Because there is one loaf, we, who are many, are one body, for we all share the one loaf.",
   },
 ];
 
@@ -85,7 +85,7 @@ export default function HomeWelcomeSection() {
           </div>
           <div className="flex justify-end w-full">
             <div className="flex flex-col gap-4 self-end rounded-[12px] bg-gray-900_01 p-[18px] sm:w-full w-[302px] md:w-[302px] lg:w-[302px]">
-              <div className="flex flex-col items-start gap-2.5 h-[70px]">
+              <div className="flex flex-col items-start gap-2.5 h-[80px]">
                 <Text as="p" className="!font-poppins text-[16px] font-normal">
                   {texts[currentIndex].verse}
                 </Text>

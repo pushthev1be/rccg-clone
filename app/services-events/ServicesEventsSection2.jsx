@@ -75,7 +75,7 @@ export default function ServicesEventsSection2() {
                         as="h3"
                         className="text-[24px] font-bold !text-gray-900_02 lg:text-[22px] md:text-[20px] sm:text-[18px]"
                       >
-                        Salvation Celebration
+                        Coming Soon
                       </Heading>
                       <Text
                         size="textmd"
@@ -83,14 +83,7 @@ export default function ServicesEventsSection2() {
                         className="text-[20px] font-normal leading-6 !text-gray-600_01 lg:text-[18px] md:text-[16px]"
                       >
                         <>
-                          Lörem ipsum prelig trekånar i prenyde. Rektigt nelig
-                          osk och vare, emedan tåk. Trollfilt
-                          <br />
-                          erd i koktiga evås. Du kan vara drabbad.Lörem ipsum
-                          prelig trekånar i prenyde. Rektigt
-                          <br />
-                          nelig osk och vare, emedan tåk. Trollfilt erd i
-                          koktiga evås. Du kan vara drabbad.{" "}
+                        Join us at RCCG Rod of God Parish for any of our events, a powerful gathering of worship, prayer, and spiritual renewal. Our events are designed to uplift, inspire, and bring us closer to God as a community. Expect heartfelt worship, impactful teachings, and a time of fellowship with believers.
                         </>
                       </Text>
                       <div className="flex gap-4 self-stretch sm:flex-col">
@@ -107,7 +100,7 @@ export default function ServicesEventsSection2() {
                             as="p"
                             className="text-[20px] font-normal !text-blue-a400 lg:text-[18px] md:text-[16px]"
                           >
-                            Parish House Indianapolis.
+                            Coming Soon
                           </Text>
                         </div>
                         <div className="flex flex-1 items-center gap-2 px-4 sm:px-0 sm:pt-2 sm:self-stretch">
@@ -123,7 +116,7 @@ export default function ServicesEventsSection2() {
                             as="p"
                             className="text-[20px] font-normal !text-blue-a400 lg:text-[18px] md:text-[16px]"
                           >
-                            10th January 2025
+                            To Be Dated(TBD)
                           </Text>
                         </div>
                       </div>
@@ -142,7 +135,7 @@ export default function ServicesEventsSection2() {
                       as="h4"
                       className="text-[24px] font-bold !text-gray-900_02 lg:text-[22px] md:text-[20px] sm:text-[18px]"
                     >
-                      Youth Event
+                      Coming Soon
                     </Heading>
                     <Text
                       size="textmd"
@@ -150,14 +143,7 @@ export default function ServicesEventsSection2() {
                       className="text-[20px] font-normal leading-6 !text-gray-600_01 lg:text-[18px] md:text-[16px]"
                     >
                       <>
-                        Lörem ipsum prelig trekånar i prenyde. Rektigt nelig osk
-                        och vare, emedan tåk. Trollfilt
-                        <br />
-                        erd i koktiga evås. Du kan vara drabbad.Lörem ipsum
-                        prelig trekånar i prenyde. Rektigt
-                        <br />
-                        nelig osk och vare, emedan tåk. Trollfilt erd i koktiga
-                        evås. Du kan vara drabbad.{" "}
+                      Join us at RCCG Rod of God Parish for any of our events, a powerful gathering of worship, prayer, and spiritual renewal. Our events are designed to uplift, inspire, and bring us closer to God as a community. Expect heartfelt worship, impactful teachings, and a time of fellowship with believers.
                       </>
                     </Text>
                     <div className="flex gap-4 self-stretch sm:flex-col">
@@ -190,7 +176,7 @@ export default function ServicesEventsSection2() {
                           as="p"
                           className="text-[20px] font-normal !text-blue-a400 lg:text-[18px] md:text-[16px]"
                         >
-                          16th January 2025
+                          To Be Dated(TBD)
                         </Text>
                       </div>
                     </div>

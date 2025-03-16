@@ -8,11 +8,7 @@ const serviceDepartmentGrid = [
         userTitle: "Choir",
         userDescription: (
           <>
-            Lörem ipsum desöhet onde prer sugt, an teliga. Prement lar
-            <br />
-            minyn sugt, an teliga. Lörem ipsum desöhet onde prer sugt,
-            <br />
-            an teliga. Prement larminyn sugt, an teliga.
+            Our Choir leads the congregation in heartfelt worship, creating an atmosphere where God’s presence is felt through spirit-filled songs and praise.
           </>
         ),
       },
@@ -21,11 +17,8 @@ const serviceDepartmentGrid = [
         userTitle: "Sunday School",
         userDescription: (
           <>
-            Lörem ipsum desöhet onde prer sugt, an teliga. Prement lar
-            <br />
-            minyn sugt, an teliga. Lörem ipsum desöhet onde prer sugt,
-            <br />
-            an teliga. Prement larminyn sugt, an teliga.
+           Sunday School is a time of deep biblical teaching, helping believers grow in faith, understanding, and practical Christian living.
+
           </>
         ),
       },
@@ -34,11 +27,7 @@ const serviceDepartmentGrid = [
     userTitle: "Welfare",
     userDescription: (
       <>
-        Lörem ipsum desöhet onde prer sugt, an teliga. Prement lar
-        <br />
-        minyn sugt, an teliga. Lörem ipsum desöhet onde prer sugt,
-        <br />
-        an teliga. Prement larminyn sugt, an teliga.
+        The Welfare Department extends God’s love through acts of kindness, providing support and care to those in need within the church and community.
       </>
     ),
   },
@@ -47,11 +36,8 @@ const serviceDepartmentGrid = [
     userTitle: "Ushering",
     userDescription: (
       <>
-        Lörem ipsum desöhet onde prer sugt, an teliga. Prement lar
-        <br />
-        minyn sugt, an teliga. Lörem ipsum desöhet onde prer sugt,
-        <br />
-        an teliga. Prement larminyn sugt, an teliga.
+        Our Ushers ensure a warm and welcoming worship experience by assisting with seating, orderliness, and ensuring a smooth flow during services.
+
       </>
     ),
   },
@@ -60,11 +46,8 @@ const serviceDepartmentGrid = [
     userTitle: "Sound & Media",
     userDescription: (
       <>
-        Lörem ipsum desöhet onde prer sugt, an teliga. Prement lar
-        <br />
-        minyn sugt, an teliga. Lörem ipsum desöhet onde prer sugt,
-        <br />
-        an teliga. Prement larminyn sugt, an teliga.
+        The Sound & Media team enhances worship by managing audio, visuals, and live streaming, ensuring every message is delivered with clarity and excellence.
+
       </>
     ),
   },
@@ -73,11 +56,8 @@ const serviceDepartmentGrid = [
     userTitle: "Special Duties",
     userDescription: (
       <>
-        Lörem ipsum desöhet onde prer sugt, an teliga. Prement lar
-        <br />
-        minyn sugt, an teliga. Lörem ipsum desöhet onde prer sugt,
-        <br />
-        an teliga. Prement larminyn sugt, an teliga.
+        The Special Duties team provides essential support for church programs, coordinating logistics and ensuring smooth event execution.
+
       </>
     ),
   },
@@ -86,11 +66,8 @@ const serviceDepartmentGrid = [
     userTitle: "Children and Media",
     userDescription: (
       <>
-        Lörem ipsum desöhet onde prer sugt, an teliga. Prement lar
-        <br />
-        minyn sugt, an teliga. Lörem ipsum desöhet onde prer sugt,
-        <br />
-        an teliga. Prement larminyn sugt, an teliga.
+        Our Children’s Ministry nurtures young hearts in the faith, while the Media team creatively shares God’s message through digital platforms.
+
       </>
     ),
   },
@@ -99,11 +76,8 @@ const serviceDepartmentGrid = [
     userTitle: "Accounting",
     userDescription: (
       <>
-        Lörem ipsum desöhet onde prer sugt, an teliga. Prement lar
-        <br />
-        minyn sugt, an teliga. Lörem ipsum desöhet onde prer sugt,
-        <br />
-        an teliga. Prement larminyn sugt, an teliga.
+       The Accounting team ensures transparency and stewardship in managing church finances, handling tithes, offerings, and budgets with integrity.
+
       </>
     ),
   },
@@ -112,11 +86,8 @@ const serviceDepartmentGrid = [
     userTitle: "Transportation",
     userDescription: (
       <>
-        Lörem ipsum desöhet onde prer sugt, an teliga. Prement lar
-        <br />
-        minyn sugt, an teliga. Lörem ipsum desöhet onde prer sugt,
-        <br />
-        an teliga. Prement larminyn sugt, an teliga.
+        The Transportation team ensures that members and visitors can attend services and events with ease, providing reliable transport solutions.
+
       </>
     ),
   },
@@ -125,11 +96,8 @@ const serviceDepartmentGrid = [
     userTitle: "Sanctuary Keeper & Beautifiers",
     userDescription: (
       <>
-        Lörem ipsum desöhet onde prer sugt, an teliga. Prement lar
-        <br />
-        minyn sugt, an teliga. Lörem ipsum desöhet onde prer sugt,
-        <br />
-        an teliga. Prement larminyn sugt, an teliga.
+        This team maintains the cleanliness and beauty of God’s house, creating a welcoming and reverent environment for worship.
+
       </>
     ),
   },
@@ -153,11 +121,8 @@ export default function AboutUsSection4() {
               className="self-stretch text-center !font-poppins text-[16px] font-light leading-[130%] !text-charcoal md:text-[15px] sm:text-[14px]"
             >
               <>
-                Lörem ipsum desöhet onde prer sugt, an teliga. Prement lar
-                <br className="md:hidden" />
-                minyn sugt, an teliga. Lörem ipsum desöhet onde prer sugt,
-                <br className="md:hidden" />
-                an teliga. Prement larminyn sugt, an teliga.
+              At RCCG Rod of God Parish, our various departments serve to strengthen the church and community. There’s a place for everyone to serve, grow, and make an impact!
+
               </>
             </Text>
           </div>

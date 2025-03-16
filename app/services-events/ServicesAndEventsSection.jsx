@@ -27,9 +27,8 @@ export default function ServicesAndEventsSection() {
               as="p"
               className="self-stretch text-center !font-poppins text-[16px] font-light leading-[120%] !text-charcoal"
             >
-              Join us as we celebrate the beginning of forever. With love in
-              their hearts and joy to share, Nina and Chris invite you to
-              witness their journey as they say "I do."
+              This team maintains the cleanliness and beauty of God’s house, creating a welcoming and reverent environment for worship.
+
             </Text>
           </div>
         </div>

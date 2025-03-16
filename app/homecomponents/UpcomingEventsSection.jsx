@@ -12,27 +12,27 @@ export default function UpcomingEventsSection() {
   const events = [
     {
       image: "img_edwin_andrade_4.png",
-      title: "Salvation Celebration",
+      title: "Coming Soon",
       description:
-        "Lörem ipsum prelig trekånar i prenyde. Rektigt nelig osk och vare, emedan tåk. Trollfilt erd i koktiga evås. Du kan vara drabbad.Lörem ipsum prelig trekånar i prenyde. Rektigt nelig osk och vare, emedan tåk. Trollfilt erd i koktiga evås. Du kan vara drabbad.",
-      location: "Parish House Indianapolis.",
-      date: "10th January 2025",
+        "Join us at RCCG Rod of God Parish for any of our events, a powerful gathering of worship, prayer, and spiritual renewal. Our events are designed to uplift, inspire, and bring us closer to God as a community. Expect heartfelt worship, impactful teachings, and a time of fellowship with believers.",
+        location: "Parish House Indianapolis.",
+      date: "To Be Dated(TBD)",
     },
     {
       image: "img_worshae_bcy9e8uyuhu_unsplash.png",
-      title: "Youth Event",
+      title: "Coming Soon",
       description:
-        "Lörem ipsum prelig trekånar i prenyde. Rektigt nelig osk och vare, emedan tåk. Trollfilt erd i koktiga evås. Du kan vara drabbad.Lörem ipsum prelig trekånar i prenyde. Rektigt nelig osk och vare, emedan tåk. Trollfilt erd i koktiga evås. Du kan vara drabbad.",
-      location: "Parish House Indianapolis.",
-      date: "16th January 2025",
+        "Join us at RCCG Rod of God Parish for any of our events, a powerful gathering of worship, prayer, and spiritual renewal. Our events are designed to uplift, inspire, and bring us closer to God as a community. Expect heartfelt worship, impactful teachings, and a time of fellowship with believers.",
+        location: "Parish House Indianapolis.",
+      date: "To Be Dated(TBD)",
     },
     {
       image: "img_edwin_andrade_4.png",
-      title: "Bible Study Session",
+      title: "Coming Soon",
       description:
-        "Lörem ipsum prelig trekånar i prenyde. Rektigt nelig osk och vare, emedan tåk. Trollfilt erd i koktiga evås. Du kan vara drabbad.Lörem ipsum prelig trekånar i prenyde. Rektigt nelig osk och vare, emedan tåk. Trollfilt erd i koktiga evås. Du kan vara drabbad.",
+        "Join us at RCCG Rod of God Parish for any of our events, a powerful gathering of worship, prayer, and spiritual renewal. Our events are designed to uplift, inspire, and bring us closer to God as a community. Expect heartfelt worship, impactful teachings, and a time of fellowship with believers.",
       location: "Parish House Indianapolis.",
-      date: "23rd January 2025",
+      date: "To Be Dated(TBD)",
     },
   ];
 

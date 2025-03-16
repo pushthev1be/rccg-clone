@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Text, Button } from "../../components";
 import React from "react";
 
@@ -22,20 +23,24 @@ export default function WorshipInvitationSection() {
                 witness their journey as they say "I do."
               </>
             </p>
+            <Link href="https://www.youtube.com/@RCCGRodofGodParish" className="flex">
             <Button
               size="xs"
               shape="round"
               className="min-w-[196px] rounded-[12px] border border-solid border-gray-400 px-[33px] sm:px-5 hover:bg-[#4D88FF] hover:text-white_color hover:border-[#4D88FF] transition-colors"
             >
-              Next service
+              RCCG Live
             </Button>
+              </Link>
+            <Link href="https://www.youtube.com/@RCCGRodofGodParish" className="flex">
             <Button
               size="xs"
               shape="round"
               className="min-w-[196px] rounded-[12px] border border-solid border-gray-400 px-[35px] sm:px-5 hover:bg-[#4D88FF] hover:text-white_color hover:border-[#4D88FF] transition-colors"
             >
-              Visit us
+              Next Gen Live
             </Button>
+            </Link>
           </div>
           <div className="flex h-[630px] flex-1 items-start justify-center rounded-[20px] bg-[url(/images/img_verse.png)] bg-cover bg-no-repeat px-14 py-[194px] md:h-auto md:w-full md:py-16 sm:py-12 sm:px-5">
             <div className="mb-3 flex w-[66%] justify-center rounded-[20px] border border-solid border-gray-400 bg-gray-100 px-[38px] py-[66px] md:w-full md:px-6 md:py-10 sm:py-8 sm:px-5">

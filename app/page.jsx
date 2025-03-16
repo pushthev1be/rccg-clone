@@ -48,9 +48,7 @@ export default function Home() {
               as="p"
               className="self-stretch text-center !font-poppins text-[16px] font-light leading-[130%] !text-charcoal md:text-[15px] sm:text-[14px]"
             >
-              Join us as we celebrate the beginning of forever. With love in
-              their hearts and joy to share, Nina and Chris invite you to
-              witness their journey as they say "I do."
+              At RCCG Rod of God Parish, our ministers are dedicated servants of God, committed to teaching His Word, nurturing spiritual growth, and supporting our community with love and prayer. They lead with wisdom, humility, and a passion for sharing the Gospel, guiding us in faith and unity.
             </Text>
           </div>
           <div className="flex gap-8 self-stretch md:flex-col">
