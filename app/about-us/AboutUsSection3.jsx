@@ -23,7 +23,7 @@ export default function AboutUsSection3() {
           </div>
         </div>
         <Img
-          src="img_bddd6da0_297a.png"
+          src="hero.jpeg"
           width={1440}
           height={1052}
           alt="Bddd6da0297a"

@@ -53,14 +53,14 @@ const hcm = [
   },
   {
     src: "img_dsc_9348.png",
-    alt: "Pastor J.K Balogun",
-    title: "Pastor J.K Balogun",
+    alt: "Pastor Adegboyega Akanle",
+    title: "Pastor Adegboyega Akanle",
     subtitle: "Minister",
   },
   {
     src: "img_dsc_9341.png",
-    alt: "Dcn. Isaac Ademakinwa",
-    title: "Dcn. Isaac Ademakinwa",
+    alt: "PST. Temitope Owoleye",
+    title: "PST. Temitope Owoleye",
     subtitle: "Minister",
   },
   {
@@ -124,19 +124,19 @@ const ngm = [
     src: "WhatsApp Image 2025-03-06 at 19.50.11_050ee46d.png",
     alt: "Janet Oluwayomi",
     title: "Janet Oluwayomi",
-    subtitle: "HOD Publication",
+    subtitle: "Next gen Minister",
   },
   {
     src: "WhatsApp Image 2025-03-06 at 19.50.12_313e4a70.png",
     alt: "Temitope Ann Aluko",
     title: "Temitope Ann Aluko",
-    subtitle: "HOD Publication",
+    subtitle: "Next Gen Minister",
   },
   {
     src: "WhatsApp Image 2025-03-06 at 19.50.12_6dc5a47c.png",
     alt: "Susanah Amure",
     title: "Susanah Amure",
-    subtitle: "HOD Publication",
+    subtitle: "Next Gen Minister",
   },
 ];
 
