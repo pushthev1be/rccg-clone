@@ -3,54 +3,49 @@ import { Img } from ".";
 
 export default function ImageSlider({ images, title }) {
   const sliderRef = useRef(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const itemsToShow = {
-    lg: 4,
-    md: 3,
-    sm: 1,
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
+  const handleMouseDown = (e) => {
+    setIsDragging(true);
+    setStartX(e.pageX - sliderRef.current.offsetLeft);
+    setScrollLeft(sliderRef.current.scrollLeft);
   };
 
-  // Create a new array with duplicated images for infinite scrolling
-  const duplicatedImages = [
-    ...images.slice(-4), // Duplicate last 4 images for seamless transition
-    ...images,
-    ...images.slice(0, 4), // Duplicate first 4 images for seamless transition
-  ];
+  const handleMouseLeave = () => {
+    setIsDragging(false);
+  };
 
-  const getCurrentItems = () => {
-    const totalItems = duplicatedImages.length;
-    const itemsPerView =
-      window.innerWidth >= 1024
-        ? itemsToShow.lg
-        : window.innerWidth >= 768
-        ? itemsToShow.md
-        : itemsToShow.sm;
-    return totalItems > itemsPerView ? itemsPerView : totalItems;
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - sliderRef.current.offsetLeft;
+    const walk = (x - startX) * 2;
+    sliderRef.current.scrollLeft = scrollLeft - walk;
   };
 
   const handlePrev = () => {
-    const itemsPerView = getCurrentItems();
-    setCurrentIndex((prevIndex) => {
-      if (prevIndex === 0) {
-        return duplicatedImages.length - itemsPerView; // Jump to the end
-      }
-      return prevIndex - itemsPerView;
-    });
+    if (sliderRef.current) {
+      const containerWidth = sliderRef.current.offsetWidth;
+      sliderRef.current.scrollLeft -= containerWidth;
+    }
   };
 
   const handleNext = () => {
-    const itemsPerView = getCurrentItems();
-    setCurrentIndex((prevIndex) => {
-      if (prevIndex + itemsPerView >= duplicatedImages.length) {
-        return 0; // Jump to the start
-      }
-      return prevIndex + itemsPerView;
-    });
+    if (sliderRef.current) {
+      const containerWidth = sliderRef.current.offsetWidth;
+      sliderRef.current.scrollLeft += containerWidth;
+    }
   };
 
   return (
-    <div className="mx-auto flex w-full flex-col my-8 md:my-12 lg:my-16">
-      <div className="flex justify-between items-center mb-12">
+    <div className="container-xs">
+      <div className="flex justify-between items-center mb-12 sm:px-4">
         <div className="flex items-center">
           <h3 className="text-[40px] font-semibold md:text-[38px] sm:text-[30px]">
             {title}
@@ -71,20 +66,27 @@ export default function ImageSlider({ images, title }) {
           </button>
         </div>
       </div>
-      <div className="overflow-hidden">
+      <div className="overflow-hidden -mx-[max(0px,calc((100vw-1280px)/2))]">
         <div
           ref={sliderRef}
-          className="flex transition-transform duration-500"
+          className="flex gap-6  overflow-x-auto md:px-[80px] lg:px-[80px] sm:px-4 scrollbar-hide scroll-smooth))]"
           style={{
-            transform: `translateX(-${
-              currentIndex * (100 / getCurrentItems())
-            }%)`,
+            scrollSnapType: "x mandatory",
+            WebkitOverflowScrolling: "touch",
+            scrollBehavior: "smooth",
+            msOverflowStyle: "none",
+            scrollbarWidth: "none",
           }}
+          onMouseDown={handleMouseDown}
+          onMouseLeave={handleMouseLeave}
+          onMouseUp={handleMouseUp}
+          onMouseMove={handleMouseMove}
         >
-          {duplicatedImages.map((image, index) => (
+          {images.map((image, index) => (
             <div
               key={index}
-              className="flex-none w-full sm:w-full md:w-1/3 lg:w-1/4 px-2"
+              className="flex-none w-[350px] sm:w-[calc(100vw-40px)]"
+            //   style={{ scrollSnapAlign: "start" }}
             >
               <div className="relative group overflow-hidden rounded-[15px] cursor-pointer">
                 <Img

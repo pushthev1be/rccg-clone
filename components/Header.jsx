@@ -72,7 +72,11 @@ export default function Header({ ...props }) {
               <Link href={link.href}>
                 <span
                   className={`text-[20px] font-normal ${
-                    pathname === link.href ? "text-blue-900" : "text-black"
+                    pathname === link.href
+                      ? "text-blue-900"
+                      : pathname === "/"
+                      ? "text-white"
+                      : "text-black"
                   } hover:text-blue-900`}
                 >
                   {link.label}
@@ -94,7 +98,6 @@ export default function Header({ ...props }) {
                 <li key={link.href}>
                   <Link href={link.href} onClick={() => setIsMenuOpen(false)}>
                     <p
-
                       className={`text-[24px] font-normal ${
                         pathname === link.href ? "text-blue-900" : "text-black"
                       } hover:text-blue-900`}

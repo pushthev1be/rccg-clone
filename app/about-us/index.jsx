@@ -113,80 +113,77 @@ const hcm = [
   },
 ];
 
-
 const ngm = [
-    {
-      src: "img_dsc_9404.png",
-      alt: "Segun Oladeji",
-      title: "Segun Oladeji",
-      subtitle: "Next Gen Minister",
-    },
-    {
-      src: "WhatsApp Image 2025-03-06 at 19.50.11_050ee46d.png",
-      alt: "Janet Oluwayomi",
-      title: "Janet Oluwayomi",
-      subtitle: "HOD Publication",
-    },
-    {
-      src: "WhatsApp Image 2025-03-06 at 19.50.12_313e4a70.png",
-      alt: "Temitope Ann Aluko",
-      title: "Temitope Ann Aluko",
-      subtitle: "HOD Publication",
-    },
-    {
-      src: "WhatsApp Image 2025-03-06 at 19.50.12_6dc5a47c.png",
-      alt: "Susanah Amure",
-      title: "Susanah Amure",
-      subtitle: "HOD Publication",
-    },
+  {
+    src: "img_dsc_9404.png",
+    alt: "Segun Oladeji",
+    title: "Segun Oladeji",
+    subtitle: "Next Gen Minister",
+  },
+  {
+    src: "WhatsApp Image 2025-03-06 at 19.50.11_050ee46d.png",
+    alt: "Janet Oluwayomi",
+    title: "Janet Oluwayomi",
+    subtitle: "HOD Publication",
+  },
+  {
+    src: "WhatsApp Image 2025-03-06 at 19.50.12_313e4a70.png",
+    alt: "Temitope Ann Aluko",
+    title: "Temitope Ann Aluko",
+    subtitle: "HOD Publication",
+  },
+  {
+    src: "WhatsApp Image 2025-03-06 at 19.50.12_6dc5a47c.png",
+    alt: "Susanah Amure",
+    title: "Susanah Amure",
+    subtitle: "HOD Publication",
+  },
+];
 
-  ];
-
-
-  const hod = [
-    {
-      src: "img_dsc_9396.png",
-      alt: "Oladipo Baruwa",
-      title: "Oladipo Baruwa",
-      subtitle: "HOD Protocol",
-    },
-    {
-      src: "img_dsc_9388.png",
-      alt: "Yetunde Ajanaku",
-      title: "Yetunde Ajanaku",
-      subtitle: "HOD Choir",
-    },
-    {
-      src: "img_dsc_9374.png",
-      alt: "Oloyede Amure",
-      title: "Oloyede Amure",
-      subtitle: "HOD Soccer Team",
-    },
-    {
-      src: "img_dsc_9404.png",
-      alt: "Segun Oladeji",
-      title: "Segun Oladeji",
-      subtitle: "HOD Publication",
-    },
-    {
-      src: "img_dsc_9420.png",
-      alt: "David Ayodele",
-      title: "David Ayodele",
-      subtitle: "HOD Drama",
-    },
-    {
-      src: "img_dsc_9495.png",
-      alt: "Pastor(Mrs) F.O Balogun",
-      title: "Pastor(Mrs) F.O Balogun",
-      subtitle: "HOD Sanctuary",
-    },
-    {
-      src: "img_dsc_9511.png",
-      alt: "Bro Ademola Karonwi",
-      title: "Bro Ademola Karonwi",
-      subtitle: "HOD Children’s Dept.",
-    },
-  ];
+const hod = [
+  {
+    src: "img_dsc_9396.png",
+    alt: "Oladipo Baruwa",
+    title: "Oladipo Baruwa",
+    subtitle: "HOD Protocol",
+  },
+  {
+    src: "img_dsc_9388.png",
+    alt: "Yetunde Ajanaku",
+    title: "Yetunde Ajanaku",
+    subtitle: "HOD Choir",
+  },
+  {
+    src: "img_dsc_9374.png",
+    alt: "Oloyede Amure",
+    title: "Oloyede Amure",
+    subtitle: "HOD Soccer Team",
+  },
+  {
+    src: "img_dsc_9404.png",
+    alt: "Segun Oladeji",
+    title: "Segun Oladeji",
+    subtitle: "HOD Publication",
+  },
+  {
+    src: "img_dsc_9420.png",
+    alt: "David Ayodele",
+    title: "David Ayodele",
+    subtitle: "HOD Drama",
+  },
+  {
+    src: "img_dsc_9495.png",
+    alt: "Pastor(Mrs) F.O Balogun",
+    title: "Pastor(Mrs) F.O Balogun",
+    subtitle: "HOD Sanctuary",
+  },
+  {
+    src: "img_dsc_9511.png",
+    alt: "Bro Ademola Karonwi",
+    title: "Bro Ademola Karonwi",
+    subtitle: "HOD Children's Dept.",
+  },
+];
 
 export default function AboutUsPage() {
   const [isClient, setIsClient] = useState(false);
@@ -284,22 +281,13 @@ export default function AboutUsPage() {
         {isClient && (
           <div className="flex flex-col gap-44 md:gap-[132px] sm:gap-[88px] mt-[100px]">
             <div className="flex flex-col gap-16 sm:gap-8">
-              <div className="container-xs md:px-5">
-                <ImageSlider images={hcm} title={"Head Church Ministers"} />
-              </div>
+              <ImageSlider images={hcm} title={"Head Church Ministers"} />
             </div>
             <div className="flex flex-col gap-16 sm:gap-8">
-              <div className="container-xs md:px-5">
-                <ImageSlider images={ngm} title={"Next Gen Ministers"} />
-              </div>
+              <ImageSlider images={ngm} title={"Next Gen Ministers"} />
             </div>
             <div className="flex flex-col gap-16 sm:gap-8">
-              <div className="container-xs md:px-5">
-                <ImageSlider
-                  images={hod}
-                  title={"Our Head of Departments"}
-                />
-              </div>
+              <ImageSlider images={hod} title={"Our Head of Departments"} />
             </div>
           </div>
         )}
