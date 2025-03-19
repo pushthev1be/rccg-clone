@@ -102,7 +102,7 @@ export default function ImageSlider({ images, title }) {
                   sm:translate-y-0
                   transition-transform duration-300 ease-in-out"
                 >
-                  <p className="text-[20px] text-white_color font-medium">
+                  <p className="text-[20px] text-white_color font-medium capitalize">
                     {image.title}
                   </p>
                   <p className="text-[13.5px] text-white_color">

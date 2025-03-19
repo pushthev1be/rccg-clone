@@ -47,20 +47,20 @@ const hcm = [
   },
   {
     src: "img_dsc_9350.png",
-    alt: "Dcn. Adekola Omodele",
-    title: "Dcn. Adekola Omodele",
+    alt: "Dcn. Kolade Omodele",
+    title: "Dcn. Kolade Omodele",
     subtitle: "Minister",
   },
   {
     src: "img_dsc_9348.png",
-    alt: "Pastor Adegboyega Akanle",
-    title: "Pastor Adegboyega Akanle",
+    alt: "Pastor Gboyega Akanle",
+    title: "Pastor Gboyega Akanle",
     subtitle: "Minister",
   },
   {
     src: "img_dsc_9341.png",
-    alt: "PST. Temitope Owoleye",
-    title: "PST. Temitope Owoleye",
+    alt: "PST. Temitope Owoeye",
+    title: "PST. Temitope Owoeye",
     subtitle: "Minister",
   },
   {
@@ -95,8 +95,8 @@ const hcm = [
   },
   {
     src: "img_dsc_9245.png",
-    alt: "Dr. Ayo Oshinowo",
-    title: "Dr. Ayo Oshinowo",
+    alt: "Dr. Ayo Oshinnowo",
+    title: "Dr. Ayo Oshinnowo",
     subtitle: "Minister",
   },
   {
@@ -107,8 +107,26 @@ const hcm = [
   },
   {
     src: "img_dsc_9293.png",
-    alt: "Bro Mfon H. Obot",
-    title: "Bro Mfon H. Obot",
+    alt: "Bro Mfon Obot",
+    title: "Bro Mfon Obot",
+    subtitle: "Minister",
+  },
+  {
+    src: "nhjsdkjd1.jpeg",
+    alt: "Pst. Feyisayo Owoeye",
+    title: "Pst. Feyisayo Owoeye",
+    subtitle: "Minister",
+  },
+  {
+    src: "jsdnjbjhosdh.jpeg",
+    alt: "Dcns Eniola Omodele",
+    title: "Dcns Eniola Omodele",
+    subtitle: "Minister",
+  },
+  {
+    src: "osbhsabjhbasi.jpeg",
+    alt: "Dcn Isaac Ademakinwa",
+    title: "Dcn Isaac Ademakinwa",
     subtitle: "Minister",
   },
 ];
@@ -143,8 +161,8 @@ const ngm = [
 const hod = [
   {
     src: "img_dsc_9396.png",
-    alt: "Oladipo Baruwa",
-    title: "Oladipo Baruwa",
+    alt: "Oladipupo Baruwa",
+    title: "Oladipupo Baruwa",
     subtitle: "HOD Protocol",
   },
   {
@@ -281,13 +299,13 @@ export default function AboutUsPage() {
         {isClient && (
           <div className="flex flex-col gap-44 md:gap-[132px] sm:gap-[88px] mt-[100px]">
             <div className="flex flex-col gap-16 sm:gap-8">
-              <ImageSlider images={hcm} title={"Head Church Ministers"} />
+              <ImageSlider images={hcm} title={"Church Ministers"} />
             </div>
             <div className="flex flex-col gap-16 sm:gap-8">
               <ImageSlider images={ngm} title={"Next Gen Ministers"} />
             </div>
             <div className="flex flex-col gap-16 sm:gap-8">
-              <ImageSlider images={hod} title={"Our Head of Departments"} />
+              <ImageSlider images={hod} title={"Head of Departments"} />
             </div>
           </div>
         )}
