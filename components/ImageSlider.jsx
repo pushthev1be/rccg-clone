@@ -94,7 +94,7 @@ export default function ImageSlider({ images, title }) {
                   width={350}
                   height={398}
                   alt={image.alt}
-                  className="h-[398px] w-full rounded-[15px] object-cover"
+                  className="h-full w-full rounded-[15px]  sm:object-fill md:object-cover lg:object-cover"
                 />
                 <div
                   className="absolute bottom-0 left-0 w-full h-[30%] bg-[#181818] flex flex-col items-center justify-center

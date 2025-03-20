@@ -26,14 +26,14 @@ export default function UpcomingEventsSection() {
         location: "Parish House Indianapolis.",
       date: "To Be Dated(TBD)",
     },
-    {
-      image: "img_edwin_andrade_4.png",
-      title: "Coming Soon",
-      description:
-        "Join us at RCCG Rod of God Parish for any of our events, a powerful gathering of worship, prayer, and spiritual renewal. Our events are designed to uplift, inspire, and bring us closer to God as a community. Expect heartfelt worship, impactful teachings, and a time of fellowship with believers.",
-      location: "Parish House Indianapolis.",
-      date: "To Be Dated(TBD)",
-    },
+    // {
+    //   image: "img_edwin_andrade_4.png",
+    //   title: "Coming Soon",
+    //   description:
+    //     "Join us at RCCG Rod of God Parish for any of our events, a powerful gathering of worship, prayer, and spiritual renewal. Our events are designed to uplift, inspire, and bring us closer to God as a community. Expect heartfelt worship, impactful teachings, and a time of fellowship with believers.",
+    //   location: "Parish House Indianapolis.",
+    //   date: "To Be Dated(TBD)",
+    // },
   ];
 
   // Create individual event component
