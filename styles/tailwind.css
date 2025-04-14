@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+
   :root {
     /*------Color variables------*/
     --alternate: #757575;
@@ -27,6 +33,8 @@
     --gray_900_01: #202020;
     --gray_900_02: #212121;
     --white_color: #ffffff;
+    --wine: #6B2D3C; /* Added wine color */
+    --wine-light: #8B4B5C; /* Lighter wine for accents */
 
     /*------Border radius variables------*/
     --radius-xs: 4px;
@@ -59,6 +67,7 @@
     --space-15xl: 140px;
     --space-16xl: 146px;
   }
+
   [type="text"],
   input:where(:not([type])),
   [type="email"],
@@ -85,7 +94,6 @@
     line-height: unset;
   }
 
-  /* Override default focus colors for tailwindcss-forms https://github.com/tailwindlabs/tailwindcss-forms */
   [type="text"]:focus,
   [type="email"]:focus,
   [type="url"]:focus,
@@ -99,15 +107,14 @@
     --tw-ring-color: transparent;
     border-color: transparent;
   }
+
   [type="radio"]:focus,
   [type="checkbox"]:focus {
     --tw-ring-color: transparent;
   }
 }
+
 @layer components {
-  /*-------------------------------------
-  Container CSS
---------------------------------------*/
   .container-xs {
     @apply w-full mx-auto max-w-[1276px];
   }
