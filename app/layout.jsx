@@ -1,6 +1,7 @@
 import "../styles/index.css"; // Should already be correct
 import "../styles/font.css"; // Should already be correct
 import { LoadingProvider } from "../context/LoadingContext";
+import Link from "next/link";
 
 export const metadata = {
   title: "Welcome to RCCG Rod Of God Parish, Indianapolis - Home",
@@ -20,6 +21,41 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="/tailwind.css" />
       </head>
       <body className="font-inter">
+        <header className="sticky top-0 z-10 bg-white border-b border-gray-200 shadow-sm">
+          <div className="container-xs px-4 py-4 flex justify-between items-center">
+            <Link href="/">
+              <h1 className="text-xl font-semibold text-gray-800 hover:text-blue-600 transition-colors">
+                RCCG Rod Of God Parish
+              </h1>
+            </Link>
+            <nav className="flex gap-6">
+              <Link
+                href="/"
+                className="text-gray-700 hover:text-blue-600 transition-colors duration-300"
+              >
+                Home
+              </Link>
+              <Link
+                href="/about-us"
+                className="text-gray-700 hover:text-blue-600 transition-colors duration-300"
+              >
+                About Us
+              </Link>
+              <Link
+                href="/gallery"
+                className="text-gray-700 hover:text-blue-600 transition-colors duration-300"
+              >
+                Gallery
+              </Link>
+              <Link
+                href="/contact"
+                className="text-gray-700 hover:text-blue-600 transition-colors duration-300"
+              >
+                Contact
+              </Link>
+            </nav>
+          </div>
+        </header>
         <LoadingProvider>{children}</LoadingProvider>
       </body>
     </html>

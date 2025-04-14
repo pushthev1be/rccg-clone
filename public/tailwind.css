@@ -1657,6 +1657,10 @@ body {
   border-top-width: 4px;
 }
 
+.border-b{
+  border-bottom-width: 1px;
+}
+
 .\!border-solid{
   border-style: solid !important;
 }
@@ -1690,6 +1694,11 @@ body {
 .border-gray-400{
   --tw-border-opacity: 1;
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
+
+.border-gray-200{
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
 .border-t-transparent{
@@ -2128,6 +2137,11 @@ body {
   line-height: 1.25rem;
 }
 
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -2419,6 +2433,11 @@ body {
 
 .hover\:text-white_color:hover{
   color: var(--white_color);
+}
+
+.hover\:text-blue-600:hover{
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover{
