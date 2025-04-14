@@ -55,7 +55,7 @@ const Upload = () => {
 
   return (
     <motion.div
-      className="container-xs px-4 py-12 min-h-screen bg-wine"
+      className="py-12"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}

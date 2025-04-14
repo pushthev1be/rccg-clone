@@ -1,13 +1,27 @@
-import React from "react";
-import Page from ".";
+import "../src/styles/index.css";
+import "../src/styles/font.css";
+import { LoadingProvider } from "../context/LoadingContext";
 
 export const metadata = {
-  title: "Get Involved at Rod of God Parish - Volunteer & Give Cheerfully",
+  title: "Welcome to RCCG Rod Of God Parish, Indianapolis - Home",
   description:
-    "Join the Rod of God Parish community in Indianapolis by getting involved. Discover ways to volunteer, give cheerfully, and support our mission. Embrace the spirit of giving as outlined in 2 Corinthians 9:7 and make a difference today.",
-  //ogTitle:'...'
+    "Join the Redeemed Christian Church of God, Rod Of God Parish in Indianapolis for spiritual growth and community events. Experience love and worship with us.",
 };
 
-export default function GetInvolvedPage() {
-  return <Page />;
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#000000" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="/tailwind.css" />
+      </head>
+      <body className="font-inter">
+        <LoadingProvider>{children}</LoadingProvider>
+      </body>
+    </html>
+  );
 }

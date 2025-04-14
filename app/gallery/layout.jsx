@@ -1,6 +1,5 @@
-import "../../styles/tailwind.css";
-import "../../styles/index.css";
-import "../../styles/font.css";
+import "@/styles/index.css";
+import "@/styles/font.css";
 import Link from "next/link";
 
 export const metadata = {
@@ -10,7 +9,7 @@ export const metadata = {
 
 export default function GalleryLayout({ children }) {
   return (
-    <div className="font-inter bg-wine text-gray-100 min-h-screen">
+    <div className="font-inter min-h-screen bg-wine text-gray-100">
       <header className="sticky top-0 z-10 bg-wine-light shadow-md">
         <div className="container-xs px-4 py-4 flex justify-between items-center">
           <Link href="/gallery">

@@ -29,12 +29,12 @@
     --gray_700_7f: #6868687f;
     --gray_700_87: #68686887;
     --gray_800: #444444;
-    --gray_900: #1e1e1e;
+    --gray_900: #1e1e1b;
     --gray_900_01: #202020;
     --gray_900_02: #212121;
     --white_color: #ffffff;
-    --wine: #6B2D3C; /* Added wine color */
-    --wine-light: #8B4B5C; /* Lighter wine for accents */
+    --wine: #6B2D3C;
+    --wine-light: #8B4B5C;
 
     /*------Border radius variables------*/
     --radius-xs: 4px;
@@ -84,6 +84,8 @@
   [multiple],
   textarea,
   select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
     background-color: transparent;
     border-color: unset;
