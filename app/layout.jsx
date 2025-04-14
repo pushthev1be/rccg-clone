@@ -1,6 +1,6 @@
-import "../styles/index.css"; // Should already be correct
-import "../styles/font.css"; // Should already be correct
-import { LoadingProvider } from "../context/LoadingContext";
+import "../styles/index.css"; // Corrected from ../../styles/index.css
+import "../styles/font.css"; // Corrected from ../../styles/font.css
+import { LoadingProvider } from "../context/LoadingContext"; // Corrected from ../../context/LoadingContext
 import Link from "next/link";
 
 export const metadata = {
@@ -46,6 +46,12 @@ export default function RootLayout({ children }) {
                 className="text-gray-700 hover:text-blue-600 transition-colors duration-300"
               >
                 Gallery
+              </Link>
+              <Link
+                href="/gallery/upload"
+                className="text-gray-700 hover:text-blue-600 transition-colors duration-300"
+              >
+                Upload
               </Link>
               <Link
                 href="/contact"
