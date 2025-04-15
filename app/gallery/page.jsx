@@ -1,42 +1,71 @@
-"use client";
-import React, { useEffect, useState } from "react";
+import "../../styles/index.css";
+import "../../styles/font.css";
+import { LoadingProvider } from "../../context/LoadingContext";
+import Link from "next/link";
+import Image from "next/image";
 
-export default function GalleryPage() {
-  const [images, setImages] = useState([]);
+export const metadata = {
+  title: "Welcome to RCCG Rod Of God Parish, Indianapolis - Home",
+  description:
+    "Join the Redeemed Christian Church of God, Rod Of God Parish in Indianapolis for spiritual growth and community events. Experience love and worship with us.",
+};
 
-  useEffect(() => {
-    const fetchImages = async () => {
-      const res = await fetch("https://image-backend-mii5.onrender.com/api/images");
-      const data = await res.json();
-      setImages(data);
-    };
-    fetchImages();
-  }, []);
-
+export default function RootLayout({ children }) {
   return (
-    <div className="py-12 px-4">
-      <h2 className="text-3xl font-semibold text-gray-800 mb-6 text-center">Gallery</h2>
-      <p className="text-gray-500 mb-10 text-center">
-        Browse our collection of images from church events.
-      </p>
-
-      {images.length === 0 ? (
-        <p className="text-center text-gray-400">No images uploaded yet.</p>
-      ) : (
-        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          {images.map((img) => (
-            <div key={img._id} className="rounded-lg overflow-hidden shadow">
-              <img
-                src={img.url}
-                alt={img.title || "Church event"}
-                className="w-full h-48 object-cover"
-              />
-              {img.title && <p className="p-2 text-gray-700 font-semibold">{img.title}</p>}
-              {img.description && <p className="px-2 pb-2 text-gray-500 text-sm">{img.description}</p>}
-            </div>
-          ))}
-        </div>
-      )}
-    </div>
+    <html lang="en">
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#000000" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="/tailwind.css" />
+      </head>
+      <body className="font-inter">
+        <header className="sticky top-0 z-10 bg-white border-b border-gray-200 shadow-sm">
+          <div className="container-xs px-4 py-4 flex justify-between items-center">
+            <Link href="/" className="flex items-center gap-2">
+              <Image src="/images/logo.png" alt="Logo" width={32} height={32} />
+              <h1 className="text-xl font-sans font-semibold text-gray-800 hover:text-blue-600 transition-colors">
+                RCCG Gallery
+              </h1>
+            </Link>
+            <nav className="flex gap-6">
+              <Link
+                href="/"
+                className="text-gray-700 hover:text-blue-600 transition-colors duration-300"
+              >
+                Home
+              </Link>
+              <Link
+                href="/about-us"
+                className="text-gray-700 hover:text-blue-600 transition-colors duration-300"
+              >
+                About Us
+              </Link>
+              <Link
+                href="/gallery"
+                className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-sans"
+              >
+                Gallery
+              </Link>
+              <Link
+                href="/gallery/upload"
+                className="text-gray-700 hover:text-blue-600 transition-colors duration-300"
+              >
+                Upload
+              </Link>
+              <Link
+                href="/contact"
+                className="text-gray-700 hover:text-blue-600 transition-colors duration-300"
+              >
+                Contact
+              </Link>
+            </nav>
+          </div>
+        </header>
+        <LoadingProvider>{children}</LoadingProvider>
+      </body>
+    </html>
   );
 }
